@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--验证码输入背景-->
+    <size
+        android:width="0dp"
+        android:height="0dp" />
+    <solid android:color="#00000000" />
+</shape>

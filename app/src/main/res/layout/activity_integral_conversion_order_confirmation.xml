@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/LinearLayout_Divider">
+        <include layout="@layout/widget_simple_tool_bar"/>
+        <include layout="@layout/layout_order_address" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="@dimen/drawable_padding_15"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/goods_image"
+                    android:src="@drawable/ic_placeholder"
+                    android:scaleType="fitStart"
+                    android:layout_width="@dimen/image_size_width"
+                    android:layout_height="@dimen/image_size_height" />
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    style="@style/TextView_Style_Title"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/goods_integral"
+                    android:layout_alignStart="@+id/goods_integral" />
+
+                <TextView
+                    android:id="@+id/goods_integral"
+                    style="@style/TextView_Style_Title"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_toRightOf="@+id/goods_image"
+                    android:layout_toEndOf="@+id/goods_image"
+                    android:layout_alignBottom="@+id/goods_image"
+                    android:textColor="@color/colorShopping" />
+
+                <TextView
+                    android:id="@+id/nums"
+                    android:textColor="@color/color22"
+                    android:layout_alignBottom="@+id/goods_image"
+                    android:layout_alignParentRight="true"
+                    style="@style/TextView_Style_Three" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_Divider"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <RelativeLayout style="@style/RelativeLayout_Default">
+                    <TextView
+                        style="@style/TextView_Style_Title"
+                        android:text="配送运费" />
+                    <TextView
+                        android:id="@+id/freight_total_price"
+                        style="@style/TextView_RelativeLayout_Right" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/RelativeLayout_Default">
+                    <TextView
+                        style="@style/TextView_Style_Title"
+                        android:text="商品总价" />
+                    <TextView
+                        android:id="@+id/order_total"
+                        style="@style/TextView_RelativeLayout_Right"
+                        android:textColor="@color/colorShopping" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/RelativeLayout_Default">
+                    <TextView
+                        style="@style/TextView_Style_Title"
+                        android:text="买家留言" />
+                    <EditText
+                        android:id="@+id/remark"
+                        style="@style/EditText_RelativeLayout_Right"
+                        android:background="@null"
+                        android:hint="选填，可填写您与卖家达成一致的要求" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/colorLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/drawable_padding_15"
+                android:paddingBottom="@dimen/drawable_padding_15"
+                android:paddingLeft="@dimen/drawable_padding_15"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="实际支付积分:"
+                android:textColor="@color/colorTextPrimary"
+                style="@style/TextView_Style_Content" />
+
+            <TextView
+                android:id="@+id/true_pay"
+                android:paddingRight="@dimen/drawable_padding_15"
+                android:layout_marginLeft="@dimen/margin_6"
+                android:layout_marginStart="@dimen/margin_6"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorShopping"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/action_submit"
+                style="@style/TextView_Style_Content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorShopping"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:text="确认兑换" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

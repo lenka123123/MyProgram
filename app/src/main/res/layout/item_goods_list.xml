@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="272dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/left_linearlayout"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_mini" />
+
+        <View
+            android:id="@+id/left_linearlayout_item"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_mini"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_goods_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_placeholder"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_goods_image"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_5"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:lines="2"
+                android:maxLines="2"
+                android:textColor="@color/color22"
+                android:textSize="@dimen/text_size_style_two" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="12312"
+                    android:textColor="@color/colorState"
+                    android:textSize="@dimen/text_size_style_three" />
+
+                <TextView
+                    android:id="@+id/tv_month_sales_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="12312"
+                    android:textColor="@color/colorAC"
+                    android:textSize="@dimen/text_size_style_three" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/right_linearlayout"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_mini" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:background="@color/color_mini" />
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:background="@drawable/item_bg_normal">
+<LinearLayout
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="资产出售"/>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:text="资产求购"/>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd11"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="可交易资产"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd11"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd12"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="今日参考价"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd12"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd13"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="卖出数量"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            style="@style/EditText_Default"
+            android:hint="请输入卖出数量"
+            android:layout_toRightOf="@+id/et_sure_pwd13"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd14"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="卖出单价"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:hint="请输入卖出单价"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd14"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/action_submit"
+        android:text="发布"
+        style="@style/TextView_Style_Submit" />
+</LinearLayout>

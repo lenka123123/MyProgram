@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/widget_simple_tool_bar" android:id="@+id/toolbar"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ScrollView
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="@dimen/submit_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout style="@style/LinearLayout_Divider">
+
+            <RelativeLayout style="@style/RelativeLayout_Default">
+
+                <ImageView
+                    android:id="@+id/goods_picture"
+                    android:scaleType="fitStart"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_placeholder" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RelativeLayout_Default">
+                <TextView
+                    android:id="@+id/goods_name"
+                    style="@style/TextView_Style_Title"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/goods_price"
+                    style="@style/TextView_Style_Content"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_below="@+id/goods_name" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:text="所需资产: "
+                    style="@style/TextView_Style_Content"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_below="@+id/goods_price"
+                    android:layout_alignBottom="@+id/exchange_integral" />
+
+                <TextView
+                    android:id="@+id/exchange_integral"
+                    style="@style/TextView_Style_Content"
+                    android:layout_below="@+id/goods_price"
+                    android:layout_toRightOf="@+id/tv"
+                    android:layout_toEndOf="@+id/tv"
+                    android:textColor="@color/colorShopping"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/stock"
+                    android:visibility="gone"
+                    style="@style/TextView_Style_Content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@+id/exchange_integral" />
+            </RelativeLayout>
+
+            <com.itheima.view.BridgeWebView
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/margin_10"
+                android:id="@+id/bridge_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/action_submit"
+        android:text="@string/tysl_immediately_change"
+        style="@style/TextView_Style_Submit_Bottom" />
+</RelativeLayout>

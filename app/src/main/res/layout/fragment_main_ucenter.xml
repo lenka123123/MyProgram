@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lib.homhomlib.design.SlidingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:background_view="@layout/layout_sliding_layout"
+    app:sliding_mode="both">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <!--用戶信息-->
+             <include layout="@layout/layout_ucenter_part_top" />
+              <include layout="@layout/activity_putong_top"></include>
+             <include layout="@layout/activity_yingyangshi"></include>
+             <include layout="@layout/activity_yingyangshi_top"></include>
+
+
+
+            <!--收藏-->
+       <!--     <include layout="@layout/layout_ucenter_part_three" />-->
+            <!--服务订单-->
+            <include layout="@layout/layout_ucenter_part_service_order" />
+            <!--商品订单-->
+            <include layout="@layout/layout_ucenter_part_goods_order" />
+            <!--智慧零售订单-->
+            <include layout="@layout/layout_ucenter_part_goods_orderzero" />
+            <!--功能列表-->
+          <include layout="@layout/layout_ucenter_part_bottom" />
+            <!--快捷工具-->
+            <include layout="@layout/layout_ucenter_part_fast_tool" />
+        </LinearLayout>
+    </ScrollView>
+</lib.homhomlib.design.SlidingLayout>

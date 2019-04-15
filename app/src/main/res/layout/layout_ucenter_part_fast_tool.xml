@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ucenter_part_goods_order2"
+              android:background="@color/colorWhite"
+              android:layout_marginTop="@dimen/margin_10"
+              style="@style/LinearLayout_Divider">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="快捷工具" />
+        <TextView
+            android:id="@+id/action_check_more_goods_order"
+            style="@style/TextView_Style_More"
+            android:text="查看所有订单"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/drawable_padding_15"
+            android:paddingTop="@dimen/drawable_padding_15">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/action_my_dietician2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/action_goods_order_take_delivery_of_goods"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/yljk_zhuanshu_img"
+                    android:text="专属顾问" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_my_apply_for2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/yljk_fudd_img"
+                    android:text="服务订单" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/my_kj_zichan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/goods_order_wait_pay"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/yljk_dsl_bg"
+                    android:text="达事链" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/personal_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/action_goods_order_wait_evaluate"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/yljk_ruzhu_bg"
+                    android:text="我要入驻" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/drawable_padding_15"
+            android:paddingTop="@dimen/drawable_padding_15">
+
+            <RelativeLayout
+                android:id="@+id/ucenter_part_shoucang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_shoucang"
+                    android:text="我的收藏" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_ship_address2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/action_goods_order_wait_shipments"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_dizhi"
+                    android:text="常用地址" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/action_call_service2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/action_goods_order_wait_shipments2"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ke_fu"
+                    android:text="客服中心" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ucenter_part_mymessage">
+
+                <TextView
+                    android:id="@+id/action_goods_order_take_delivery_of_goods2"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_myyijian"
+                    android:text="意见反馈" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/action_settings4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/action_goods_order_wait_evaluate2"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/yljk_shezhi_bg"
+                    android:text="设置" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

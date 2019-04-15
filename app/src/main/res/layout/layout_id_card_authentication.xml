@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/drawable_padding_15"
+    android:paddingRight="@dimen/drawable_padding_15"
+    android:paddingBottom="@dimen/drawable_padding_15">
+
+    <RelativeLayout
+        android:id="@+id/action_idc_front"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ids_cart_height"
+            android:background="@drawable/drawable_ids_crat_bg">
+
+            <ImageView
+                android:id="@+id/iv_idc_front"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:padding="@dimen/drawable_padding_6"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_id_card_front_photo" />
+
+            <ImageView
+                android:id="@+id/update_id_card_front_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_select_photo" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:textColor="#52514f"
+            android:layout_below="@+id/layout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/tysl_id_card_front_photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_idc_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ids_cart_height"
+            android:background="@drawable/drawable_ids_crat_bg">
+
+            <ImageView
+                android:id="@+id/iv_idc_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:padding="@dimen/drawable_padding_6"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_id_card_reverse_photo" />
+
+            <ImageView
+                android:id="@+id/update_id_card_reverse_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_select_photo" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:textColor="#52514f"
+            android:layout_below="@+id/layout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/tysl_id_card_reverse_photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_idc_pic"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ids_cart_height"
+            android:background="@color/colorBackground">
+
+            <ImageView
+                android:id="@+id/iv_idc_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:padding="@dimen/drawable_padding_6"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_id_card_hand_photo" />
+
+            <ImageView
+                android:id="@+id/update_id_card_hand_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_select_photo" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:textColor="#52514f"
+            android:layout_below="@+id/layout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/tysl_id_card_hand_photo" />
+    </RelativeLayout>
+</LinearLayout>
+

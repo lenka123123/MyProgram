@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:text="tv_user_name"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:text="tv_total_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="@style/TextView_Style_Title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        style="@style/RelativeLayout_Default">
+
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_placeholder"
+            android:layout_width="@dimen/image_size_width"
+            android:layout_height="@dimen/image_size_height" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_toRightOf="@+id/iv_product_image"
+            android:layout_toEndOf="@+id/iv_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:text="tv_product_name"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/TextView_Style_Content"/>
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:text="tv_product_price"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/TextView_Style_Content"/>
+
+            <TextView
+                android:id="@+id/tv_product_earnings"
+                android:text="tv_product_earnings"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/TextView_Style_Content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

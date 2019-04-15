@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<View
+        android:id="@+id/line"
+        android:background="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/widget_simple_tool_bar"/>
+
+        <include layout="@layout/layout_order_address" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/activity_padding_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="@string/tysl_shipping_address"
+                style="@style/TextView_Defaulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="15dp"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tv_goods_picture"
+                    android:src="@mipmap/ic_placeholder"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/image_size_width"
+                    android:layout_height="@dimen/image_size_height" />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/TextView_Style_Title"
+                    android:text="adsfaefasdfdfadfsdf"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_toRightOf="@+id/tv_goods_picture"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/tv_deposit"
+                    style="@style/TextView_Style_Title"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_toRightOf="@+id/tv_goods_picture"
+                    android:layout_alignBottom="@+id/tv_goods_picture"
+                    android:text="43534534 積分"
+                    android:textColor="@color/colorShopping" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_Divider"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout style="@style/RelativeLayout_Default">
+                    <TextView
+                        style="@style/TextView_Style_Title"
+                        android:text="商品定金" />
+                    <TextView
+                        android:id="@+id/freight_total_price"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/TextView_RelativeLayout_Right" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/RelativeLayout_Default">
+                    <TextView
+                        style="@style/TextView_Style_Title"
+                        android:text="定金支付截止时间" />
+
+                    <TextView
+                        android:id="@+id/tv_enter_for_endtime"
+                        style="@style/TextView_RelativeLayout_Right"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/layout_pay" />
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/LinearLayout_Divider">
+
+            <include layout="@layout/widget_simple_tool_bar"/>
+
+            <include layout="@layout/layout_order_address" />
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tv_goods_picture"
+                    android:background="@drawable/ic_placeholder"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/image_size_width"
+                    android:layout_height="@dimen/image_size_height" />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/TextView_Style_Content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_toRightOf="@+id/tv_goods_picture"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/tv_deposit"
+                    style="@style/TextView_Style_Title"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_toRightOf="@+id/tv_goods_picture"
+                    android:layout_alignBottom="@+id/tv_goods_picture"
+                    android:textColor="@color/colorShopping" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout_Divider"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:textColor="@color/color22"
+                    android:text="商品定金" />
+                <TextView
+                    android:id="@+id/tv_freight_total_price"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/TextView_RelativeLayout_Right" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:textColor="@color/color22"
+                    android:text="定金支付截止时间" />
+
+                <TextView
+                    android:id="@+id/tv_enter_for_endtime"
+                    style="@style/TextView_RelativeLayout_Right"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_pay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:paddingLeft="@dimen/drawable_padding_15"
+            android:paddingTop="@dimen/drawable_padding_15"
+            android:paddingBottom="@dimen/drawable_padding_15"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确认支付定金:"
+            android:textSize="@dimen/text_size_style_two"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/tv_true_pay"
+            android:paddingRight="@dimen/drawable_padding_15"
+            android:paddingTop="@dimen/drawable_padding_15"
+            android:paddingBottom="@dimen/drawable_padding_15"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="¥ 42500"
+            android:textColor="@color/colorShopping"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/action_pay"
+            style="@style/TextView_Style_Content"
+            android:background="@color/colorShopping"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:text="去支付" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#dbf8ff"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#056196"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺二维码"/>
+    </LinearLayout>
+<ImageView
+    android:id="@+id/erweima_im"
+    android:layout_gravity="center"
+    android:layout_width="190dp"
+    android:layout_height="190dp"
+    android:src="@mipmap/ic_launcher"
+    android:layout_marginTop="40dp"/>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="长按，保存到手机或者发送给朋友"/>
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textColor="#fead00"
+        android:textSize="15sp"
+        android:id="@+id/erweima_save"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我知道了"/>
+</LinearLayout>

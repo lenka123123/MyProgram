@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider">
+
+    <ScrollView style="@style/ScrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                style="@style/RelativeLayout_Default"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/TextView_RelativeLayout"
+                    android:text="订单状态" />
+
+                <TextView
+                    android:id="@+id/state_zh"
+                    style="@style/TextView_RelativeLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:text="等待发货"
+                    android:textColor="@color/colorShopping" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_order_address" />
+
+            <RelativeLayout
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/store_name"
+                    style="@style/TextView_Style_Content"
+                    android:drawableLeft="@drawable/ic_store"
+                    android:drawablePadding="@dimen/drawable_padding_15"
+                    android:drawableRight="@drawable/ic_go"
+                    android:text="官方" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                style="@style/RecyclerView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/drawable_padding_15">
+
+                <RelativeLayout
+                    android:id="@+id/rl_shipping_fee"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="配送运费" />
+
+                    <TextView
+                        android:id="@+id/tv_shipping_fee"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_goods_amount"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="商品总价" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_amount"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/drawable_padding_15">
+
+                <RelativeLayout
+                    android:id="@+id/rl_buyer_leave_message"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="买家留言" />
+
+                    <TextView
+                        android:id="@+id/tv_buyer_leave_message"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_order_sn"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="订单编号" />
+
+                    <TextView
+                        android:id="@+id/tv_order_sn"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_time"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="创建时间" />
+
+                    <TextView
+                        android:id="@+id/tv_add_time"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_payment_time"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="付款时间" />
+
+                    <TextView
+                        android:id="@+id/tv_payment_time"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_shipments_time"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="发货时间" />
+
+                    <TextView
+                        android:id="@+id/tv_shipments_time"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_finish_time"
+                    style="@style/RelativeLayout_Default_Order_Detail">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:text="成交时间" />
+
+                    <TextView
+                        android:id="@+id/tv_finish_time"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignParentRight="true"
+                        android:text="2017-12-22 15:43" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_goods_eval_integral"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:text="积分" />
+
+                <TextView
+                    android:id="@+id/tv_goods_eval_integral"
+                    style="@style/TextView_Style_Content"
+                    android:layout_alignParentRight="true"
+                    android:text="+20(评价商品赠送)"
+                    android:textColor="@color/colorShopping" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_goods_finish_integral"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:text="积分" />
+
+                <TextView
+                    android:id="@+id/tv_goods_finish_integral"
+                    style="@style/TextView_Style_Content"
+                    android:layout_alignParentRight="true"
+                    android:text="+20(确认收货赠送)"
+                    android:textColor="@color/colorShopping" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_action"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="@dimen/margin_10"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/action_cancel_order"
+                    style="@style/TextView_Style_Action_Ac"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_toLeftOf="@+id/action_immediate_payment"
+                    android:text="取消订单"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/action_immediate_payment"
+                    style="@style/TextView_Style_Action_Primary"
+                    android:text="立即付款"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/action_evaluate"
+                    style="@style/TextView_Style_Action_Primary"
+                    android:text="立即评价"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/action_check_wl"
+                    style="@style/TextView_Style_Action_Ac"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_toLeftOf="@+id/action_confirm_receipt"
+                    android:text="查看物流"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/action_confirm_receipt"
+                    style="@style/TextView_Style_Action_Primary"
+                    android:text="确认收货"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

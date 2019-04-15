@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:layout_marginTop="@dimen/margin_10">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <ImageView
+            android:id="@+id/goods_picture"
+            android:src="@drawable/ic_placeholder"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/image_size_width"
+            android:layout_height="@dimen/image_size_height" />
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:text="goods_name"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_toRightOf="@+id/goods_picture"
+            android:layout_toEndOf="@+id/goods_picture"
+            android:layout_alignTop="@+id/goods_picture"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/integral_gid"
+
+            android:text="exchange_integral"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+
+            android:layout_toRightOf="@+id/goods_picture"
+            android:layout_toEndOf="@+id/goods_picture"
+            android:layout_alignBottom="@+id/goods_picture"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:textColor="@color/colorShopping"
+            android:id="@id/exchange_integral"
+            android:text="integral_gid"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/goods_picture"
+            style="@style/TextView_Style_Content" />
+    </RelativeLayout>
+</LinearLayout>

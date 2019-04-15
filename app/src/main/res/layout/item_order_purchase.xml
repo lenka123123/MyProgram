@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/RelativeLayout_Default"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TextView_Style_Content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/txtCurrent"
+            style="@style/TextView_Style_Content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="17dp"
+            android:text="@string/tysl_order_current_inventory"/>
+
+        <TextView
+            android:id="@+id/txtTop"
+            style="@style/TextView_Style_Content"
+            android:layout_below="@+id/txtCurrent"
+            android:layout_marginTop="9dp"
+            android:text="@string/tysl_order_top_inventory"/>
+
+        <TextView
+            android:id="@+id/btnAdd"
+            style="@style/TextView_Style_Content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/md_btn_shape"
+            android:text="@string/app_name"/>
+    </RelativeLayout>
+
+</LinearLayout>

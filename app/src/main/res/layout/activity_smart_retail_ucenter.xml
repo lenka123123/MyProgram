@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:showDividers="middle|end"
+    android:background="@drawable/ic_smart_retail_ucenter_bg">
+
+    <RelativeLayout
+        android:padding="@dimen/drawable_padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.itheima.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_image_header"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/image_size_style_header"
+            android:layout_height="@dimen/image_size_style_header"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_default_head_image"
+            app:riv_border_color="@android:color/transparent"
+            app:riv_border_width="@dimen/drawable_padding_1"
+            app:riv_oval="true" />
+
+        <TextView
+            android:text="沃昆科技"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@+id/iv_image_header"
+            android:textColor="@color/colorWhite"
+            style="@style/TextView_Style_Title"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_order"
+        style="@style/RelativeLayout_Default"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:drawableLeft="@drawable/ic_order"
+            android:drawableStart="@drawable/ic_order"
+            style="@style/TextView_Style_Title" />
+
+        <ImageView
+            android:src="@drawable/ic_go"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_address"
+        style="@style/RelativeLayout_Default"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:drawableLeft="@drawable/ic_smart_retail_ucenter_address"
+            android:drawableStart="@drawable/ic_smart_retail_ucenter_address"
+            style="@style/TextView_Style_Title" />
+
+        <ImageView
+            android:src="@drawable/ic_go"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

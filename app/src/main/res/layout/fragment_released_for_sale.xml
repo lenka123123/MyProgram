@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_default"
+        android:orientation="vertical"
+        style="@style/LinearLayout_Divider"
+        android:showDividers="beginning|middle"
+        android:layout_width="match_parent">
+
+        <RelativeLayout style="@style/RelativeLayout_Default">
+            <TextView
+                android:id="@+id/tv1"
+                android:text="可交易资产"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color22"
+                style="@style/TextView_Style_Content" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginStart="@dimen/margin_default"
+                style="@style/EditText_Earnings"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RelativeLayout_Default">
+            <TextView
+                android:id="@+id/tv2"
+                android:text="今日参考价"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color22"
+                style="@style/TextView_Style_Content" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_toRightOf="@+id/tv2"
+                android:layout_toEndOf="@+id/tv2"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginStart="@dimen/margin_default"
+                style="@style/EditText_Earnings"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RelativeLayout_Default">
+            <TextView
+                android:id="@+id/tv3"
+                android:text="卖出单价    "
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color22"
+                style="@style/TextView_Style_Content" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:hint="请填写卖出单价"
+                android:inputType="numberDecimal"
+                android:layout_toRightOf="@+id/tv3"
+                android:layout_toEndOf="@+id/tv3"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginStart="@dimen/margin_default"
+                style="@style/EditText_Earnings"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RelativeLayout_Default">
+            <TextView
+                android:id="@+id/tv4"
+                android:text="卖出数量    "
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color22"
+                style="@style/TextView_Style_Content" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:hint="请填写卖出数量"
+                android:layout_toRightOf="@+id/tv4"
+                android:layout_toEndOf="@+id/tv4"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginStart="@dimen/margin_default"
+                style="@style/EditText_Earnings"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <TextView
+            android:text="出售"
+            android:id="@+id/action_assets_release"
+            style="@style/TextView_Style_Submit" />
+    </LinearLayout>

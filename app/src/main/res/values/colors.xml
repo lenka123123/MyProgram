@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7608</color><!--主题色-->
+    <color name="colorPrimaryDark">#ff7608</color>
+    <color name="colorAccent">#ff7608</color>
+    <color name="colorToolBarBackground">#FFFFFF</color>
+    <color name="transparent">#55ff</color>
+    <color name="transparent1">#33000000</color>
+    <color name="color22">#222222</color>
+    <color name="color77">#777777</color>
+    <color name="colorAC">#acacac</color>
+    <color name="colorD2">#d2d2d2</color>
+    <color name="colorDriver">#e6e6e6</color>
+    <color name="colorMenu">#52514f</color>
+    <color name="black">#000000</color>
+    <color name="colorProgress">#fdd212</color>
+
+    <color name="colorGray">#FFA0A0A0</color>
+
+    <color name="colorPrimaryT">#FFff7608</color><!--主题色-->
+    <color name="colorTextPrimary">#686868</color><!--界面默认黑灰text-->
+    <color name="rxColorTextDefault">#222222</color><!--字体默认颜色-->
+    <color name="colorBackground">#f0f0f0</color><!--全局Activity,Fragment背景颜色-->
+    <color name="line">#ffd3dde6</color>
+    <color name="colorTabTextViewSelColor">#333333</color><!--底部导航Tab默认颜色-->
+    <color name="colorTabTextViewUnSelColor">#36cc72</color><!--底部导航Tab按下颜色-->
+    <color name="colorTabHostBackground">#FFFFFF</color><!--底部导航背景色-->
+
+    <color name="colorShopping">#FF8C2F</color><!--底部导航背景色-->
+    <color name="colorState">#ff7608</color>
+
+    <color name="colorF72B">#f72b2b</color>
+    <color name="colorF83139">#f83139</color>
+    <color name="colorShade">#55222222</color>
+
+    <color name="colorEditTextHint">#acacac</color>
+    <color name="colorTextBottomMenu">#52514f</color>
+
+    <color name="colorTextHint">#777777</color><!--EditText hint字体颜色-->
+
+    <color name="colorLine">#66e6e6e6</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorRed">#FF1100</color>
+    <color name="colorRivBorderColor">#62E998</color>
+    <!--ToolBar全局颜色-->
+    <color name="colorToolBarTitle">#222222</color><!--toolbar标题颜色-->
+    <color name="colorToolBarText">#FFFFFF</color><!--toolbar字体颜色-->
+    <color name="colorTabAccent">#40C4FF</color>
+
+    <color name="cl_amount_view_button_normal">#237bb6</color>
+    <color name="cl_amount_view_button_press">#1f567b</color>
+    <color name="cl_amount_view_text_bg">#2b8ccd</color>
+    <color name="cl_amount_view_text">#000000</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="toumingwhite">#03ffffff</color>
+    <color name="white">#FFF</color>
+    <color name="gray">#e7e4e4</color>
+    <color name="color_mini">#F1F2F6</color>
+</resources>

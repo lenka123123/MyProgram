@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lib.homhomlib.design.SlidingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:background_view="@layout/layout_sliding_layout"
+    app:sliding_mode="both">
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multipleStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loadingView="@layout/layout_loading_view"
+        app:emptyView="@layout/layout_no_data_view"
+        app:errorView="@layout/layout_not_network"
+        app:noNetworkView="@layout/layout_not_network">
+    </com.classic.common.MultipleStatusView>
+</lib.homhomlib.design.SlidingLayout>

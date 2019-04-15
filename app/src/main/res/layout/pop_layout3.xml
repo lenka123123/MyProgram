@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/RelativeLayout_Default"
+    android:padding="15dp">
+    <ImageView
+        android:id="@+id/delete_pop"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/pop_delete"/>
+    <TextView
+        android:id="@+id/pop_zhihui_shanchu"
+        style="@style/RelativeLayout_Default"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="请输入支付密码"/>
+<LinearLayout
+    android:id="@+id/pop_zhihui_text"
+     android:layout_below="@+id/pop_zhihui_shanchu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <com.wokun.tysl.order.ui.VerificationCodeView
+
+        android:id="@+id/icv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="26dp"
+        app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+        app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+        app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+        app:icv_et_number="6"
+        app:icv_et_pwd="true"
+        app:icv_et_pwd_radius="7dp"
+        app:icv_et_text_color="#000000"
+        app:icv_et_width="40dp"/>
+
+
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_below="@+id/pop_zhihui_text"
+        android:id="@+id/btnCommit"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="#056196"
+        android:text="确认"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

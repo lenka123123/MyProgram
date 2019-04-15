@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/show_address"
+        style="@style/RelativeLayout_Default"
+        android:visibility="gone"
+      >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:src="@drawable/ic_dietician_detail_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+
+            android:id="@+id/tv_contacts"
+            style="@style/TextView_Style_Content"
+            android:textColor="@color/color22"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_toRightOf="@+id/iv1"
+            android:text="未開" />
+
+        <TextView
+            android:id="@+id/tv_order_placer_tel"
+            style="@style/TextView_Style_Content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_toRightOf="@+id/tv_contacts"
+            android:text="35345345"
+            android:textColor="@color/color22" />
+
+        <TextView
+            android:id="@+id/tv_order_placer_address"
+            style="@style/TextView_Style_Content"
+            android:layout_below="@+id/tv_contacts"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="6dp"
+            android:gravity="start"
+            android:layout_toRightOf="@+id/iv1"
+            android:text="江蘇省南京市" />
+
+        <ImageView
+            android:id="@+id/iv_go1"
+            style="@style/ImageView_Go_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_address"
+        style="@style/RelativeLayout_Default"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_dietician_detail_position" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:textColor="@color/color22"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_toRightOf="@+id/iv2"
+            android:text="请选择收货地址" />
+
+        <ImageView
+            android:id="@+id/iv_go2"
+            style="@style/ImageView_Go_Right" />
+    </RelativeLayout>
+</LinearLayout>

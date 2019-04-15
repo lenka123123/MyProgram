@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/activity_padding_default">
+
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_placeholder" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        style="@style/TextView_RelativeLayout_Item_Content"
+        android:layout_marginTop="@dimen/margin_10" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        style="@style/TextView_Style_Content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="@color/colorState" />
+</LinearLayout>

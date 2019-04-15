@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号："/>
+        <TextView
+            android:textColor="@color/colorShopping"
+             android:id="@+id/dingdanstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已评价"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"></View>
+<RelativeLayout
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/head_logo"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_placeholder"
+        android:layout_width="@dimen/image_size_width"
+        android:layout_height="@dimen/image_size_height" />
+
+    <TextView
+        android:text="家世界"
+        android:id="@+id/truename"
+        android:gravity="start"
+        style="@style/TextView_Style_Title"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/head_logo" />
+
+    <TextView
+        android:text="家世界"
+        android:id="@+id/jobType"
+        android:gravity="start"
+        style="@style/TextView_Style_Content"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/truename" />
+
+    <TextView
+        android:text="服务时间："
+        android:id="@+id/finish_time5"
+        style="@style/TextView_Style_Content"
+        android:layout_below="@+id/truename"
+        android:gravity="start"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@+id/head_logo"
+        android:ellipsize="end"
+         />
+
+    <TextView
+        android:textColor="@color/colorShopping"
+        android:text=""
+        android:id="@+id/finish_time"
+        style="@style/TextView_Style_Content"
+        android:layout_below="@+id/truename"
+        android:gravity="start"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@+id/finish_time5"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:text="服务时长："
+        android:id="@+id/finish_time6"
+        style="@style/TextView_Style_Content"
+        android:layout_below="@+id/finish_time"
+        android:gravity="start"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@+id/head_logo"
+        android:ellipsize="end"
+      />
+
+    <TextView
+        android:textColor="@color/colorShopping"
+        android:text=""
+        android:id="@+id/finish_time3"
+        style="@style/TextView_Style_Content"
+        android:layout_below="@+id/finish_time"
+        android:gravity="start"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@+id/finish_time6"
+        android:ellipsize="end"
+        />
+
+
+
+
+
+
+    <TextView
+        android:text="家"
+        android:id="@+id/order_amount"
+        style="@style/TextView_Style_Content"
+        android:layout_alignParentRight="true"
+         android:layout_below="@+id/finish_time"
+        android:textColor="@color/colorShopping" />
+
+    <TextView
+        android:text="总价："
+        style="@style/TextView_Style_Content"
+        android:layout_toLeftOf="@+id/order_amount"
+        android:layout_below="@+id/finish_time"
+        android:textColor="#666" />
+
+
+
+
+</RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"></View>
+
+    <RelativeLayout
+        android:id="@+id/zhuangtai"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+<!--
+
+        <TextView
+
+            android:text="家世界2"
+            android:id="@+id/finish_time2"
+            style="@style/TextView_Style_Content"
+       />-->
+
+        <TextView
+             android:id="@+id/action_refund_detail"
+            style="@style/TextView_Style_Three"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/drawable_btn_bg_color_ac"
+            android:text="申请解绑" />
+
+        <TextView
+
+            android:id="@+id/action_evaluate"
+            style="@style/TextView_Style_Three"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="@drawable/drawable_btn_bg_color_ac"
+            android:text="去评价" />
+
+        <TextView
+            android:id="@+id/action_consult"
+            style="@style/TextView_Style_Three"
+            android:layout_alignParentRight="true"
+            android:text="立即咨询"
+            android:background="@drawable/drawable_btn_bg_color_primary"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

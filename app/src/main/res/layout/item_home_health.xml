@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp">
+      <TextView
+          android:layout_marginRight="10dp"
+          android:layout_toLeftOf="@+id/home_health_img"
+          android:textSize="15sp"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp"
+         android:lines="2"
+         android:textColor="#333"
+         android:text=""
+         android:id="@+id/home_health_title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+<ImageView
+    android:scaleType="fitXY"
+    android:id="@+id/home_health_img"
+    android:layout_marginRight="10dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:layout_width="108dp"
+    android:layout_height="80dp"
+    android:src="@mipmap/ic_ziti"/>
+
+<ImageView
+    android:id="@+id/health_liulan"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="18dp"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_home_dianzan"/>
+   <TextView
+       android:id="@+id/home_health_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginBottom="14dp"
+       android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@+id/health_liulan"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text=""/>
+
+        <ImageView
+            android:id="@+id/health_dianzan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/home_health_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_eye"/>
+
+        <TextView
+            android:id="@+id/health_godnum"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/health_dianzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+             android:id="@+id/health_addtime"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/home_health_img"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </RelativeLayout>
+<View
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#eee"></View>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_5"
+        style="@style/RelativeLayout_Default"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_evaluation_title"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/action_check_all_evaluation"
+            style="@style/TextView_Style_More"
+            android:text="查看全部" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorDriver"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:text="暂无评价！"
+        android:id="@+id/tv_empty_evaluate"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/drawable_padding_15"
+        style="@style/TextView_Style_Content"
+        android:layout_width="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_evaluation_list"
+        android:background="@color/colorWhite"
+        style="@style/RecyclerView" />
+</LinearLayout>

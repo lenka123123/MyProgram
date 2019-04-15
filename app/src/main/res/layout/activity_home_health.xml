@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_click_banner" />
+
+    <RelativeLayout
+        android:id="@+id/action_edit_password"
+        style="@style/RelativeLayout_Default"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/first_home_yinyang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_home_healthplace" />
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/first_home_yinyang"
+            android:text="健康专栏" />
+
+        <TextView
+            android:id="@+id/home_health_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/first_home_more"
+            android:gravity="center"
+            android:text="更多" />
+
+        <ImageView
+            android:id="@+id/first_home_more"
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

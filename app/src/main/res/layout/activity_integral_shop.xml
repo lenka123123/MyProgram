@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <ScrollView style="@style/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout style="@style/RelativeLayout_Default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv"
+                    android:text="我的资产包: "
+                    style="@style/TextView_RelativeLayout"
+                    android:drawablePadding="@dimen/drawable_padding_10"
+                    android:drawableLeft="@drawable/ic_integral_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/user_integral"
+                    style="@style/TextView_RelativeLayout"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/sign_in"
+                    android:text="签到"
+                    android:background="@drawable/drawable_btn_bg_color_white"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/TextView_RelativeLayout_Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="@dimen/drawable_padding_15">
+
+                <TextView
+                    android:id="@+id/integration_rule"
+                    style="@style/TextView_Style_Content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawable_padding_6"
+                    android:drawableTop="@drawable/ic_integral_rule"
+                    android:text="资产规则"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/for_record"
+                    style="@style/TextView_Style_Content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawable_padding_6"
+                    android:drawableTop="@drawable/ic_integral_for_record"
+                    android:text="资产置换"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/integration_particulars"
+                    style="@style/TextView_Style_Content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawable_padding_6"
+                    android:drawableTop="@drawable/ic_integral_detail"
+                    android:text="资产明细"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/goods_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/drawable_padding_15">
+
+                <TextView
+                    style="@style/TextView_RelativeLayout"
+                    android:text="积分兑换"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:visibility="gone"
+                android:background="#e6e6e6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="资产置换"
+                    android:id="@+id/t"
+                    android:layout_margin="@dimen/margin_default"
+                    style="@style/TextView_Style_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_below="@+id/t"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <View
+                android:visibility="gone"
+                android:background="#e6e6e6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBackground"
+    style="@style/RelativeLayout_Default">
+
+    <TextView
+        android:id="@+id/tv_create_time"
+        android:text="tv_create_time"
+        android:background="#d2d2d2"
+        android:paddingTop="@dimen/drawable_padding_3"
+        android:paddingBottom="@dimen/drawable_padding_3"
+        android:paddingLeft="@dimen/drawable_padding_10"
+        android:paddingRight="@dimen/drawable_padding_10"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        style="@style/TextView_Style_Title" />
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_create_time"
+        android:layout_marginTop="@dimen/margin_10"
+        android:paddingTop="@dimen/drawable_padding_10"
+        android:paddingBottom="@dimen/drawable_padding_10"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="tv_title"
+            android:gravity="start"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:text="tv_content"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/margin_default"
+            style="@style/TextView_Style_Content" />
+    </LinearLayout>
+</RelativeLayout>

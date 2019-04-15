@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider">
+
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <RelativeLayout
+        android:background="@color/colorBackground"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:text="应付金额"
+            android:id="@+id/tv"
+            style="@style/TextView_RelativeLayout" />
+
+        <TextView
+            android:id="@+id/tv_true_price"
+            android:text="￥15"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_marginLeft="@dimen/activity_margin_left_default"
+            android:textColor="@color/colorState"
+            style="@style/TextView_RelativeLayout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_alipay"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_RelativeLayout_Item"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_alipay"
+            android:drawablePadding="@dimen/drawable_padding_10"
+            android:gravity="center"
+            android:text="支付宝支付" />
+
+        <TextView style="@style/TextView_Style_More"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_wxpay"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_RelativeLayout_Item"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_wxpay"
+            android:drawablePadding="@dimen/drawable_padding_10"
+            android:gravity="center"
+            android:text="微信支付" />
+
+        <TextView style="@style/TextView_Style_More"/>
+    </RelativeLayout>
+</LinearLayout>

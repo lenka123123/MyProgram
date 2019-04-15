@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TextView_Style_Title"
+            android:text="姓名        " />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditText_Earnings"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_toEndOf="@+id/tv1"
+            android:hint="@string/tysl_account_name_hint" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/TextView_Style_Title"
+            android:text="@string/tysl_deposit_bank" />
+
+        <TextView
+            android:id="@+id/tv_bank_of_deposit"
+            style="@style/EditText_Earnings"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_toEndOf="@+id/tv2"
+            android:hint="@string/tysl_deposit_bank_hint" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/TextView_Style_Title"
+            android:text="@string/tysl_credit_card_numbers" />
+
+        <EditText
+            android:id="@+id/et_id_cart"
+            style="@style/EditText_Earnings"
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_toEndOf="@+id/tv3"
+            android:hint="@string/tysl_id_cart_hint" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/TextView_Style_Title"
+            android:text="@string/tysl_default_bank" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/action_switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswBackColor="@color/colorShopping"
+            app:kswThumbColor="@color/colorWhite"
+            app:kswTintColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/action_commit"
+        style="@style/TextView_Style_Submit"
+        android:background="@drawable/drawable_button_bg_withdraw_deposit"
+        android:text="@string/tysl_submit" />
+</LinearLayout>

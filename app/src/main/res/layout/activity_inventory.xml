@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout style="@style/LinearLayout_Divider">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/RecyclerView" />
+    </LinearLayout>
+
+    <TextView
+        android:text="批量进货 "
+        android:id="@+id/action_batch_purchase"
+        style="@style/TextView_Style_Submit"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/goods_picture"
+        style="@style/ImageView_RelativeLayout"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_placeholder"
+        android:layout_height="@dimen/image_size_height"
+        android:layout_width="@dimen/image_size_width" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        style="@style/TextView_Style_Content"
+        android:textColor="@color/color22"
+        android:layout_alignTop="@+id/goods_picture"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/goods_picture" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        style="@style/TextView_Style_Three"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/goods_picture" />
+
+    <TextView
+        android:text="荐购奖"
+        android:id="@+id/tv"
+        android:layout_alignBottom="@+id/goods_picture"
+        style="@style/TextView_Style_Content"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/goods_picture" />
+
+    <TextView
+        android:id="@+id/goods_commission"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBottom="@+id/goods_picture"
+        style="@style/TextView_Style_Three"
+        android:layout_toRightOf="@+id/tv" />
+
+    <TextView
+        android:id="@+id/action_join"
+        android:text="加入推荐"
+        style="@style/TextView_Style_Content"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/drawable_btn_bg_color_primary"
+        android:layout_alignBottom="@+id/goods_picture"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

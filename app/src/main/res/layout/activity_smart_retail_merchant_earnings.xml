@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/margin_10"
+        android:padding="@dimen/drawable_padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:text="@string/tysl_withdrawal_amount"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:text="¥199999"
+                android:layout_marginTop="@dimen/margin_default"
+                android:textColor="@color/color22"
+                android:textSize="@dimen/text_size_toolbar_title"
+                style="@style/TextView_Style_Title"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/action_withdraw_deposit"
+            style="@style/TextView_Style_Action"
+            android:textSize="@dimen/text_size_style_one"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tysl_withdraw_deposit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        style="@style/LinearLayout_Divider">
+
+        <TextView
+            android:text="@string/tysl_business_data"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/drawable_padding_15"
+            style="@style/TextView_Style_Title" />
+
+        <RelativeLayout
+            style="@style/RelativeLayout_Default">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color22"
+                    android:text="@string/tysl_turnover_today"
+                    style="@style/TextView_Style_Content" />
+
+                <TextView
+                    android:text="@string/tysl_membership"
+                    android:id="@+id/tv5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color22"
+                    style="@style/TextView_Style_Content" />
+
+                <TextView
+                    android:text="@string/tysl_accumulated_income"
+                    android:id="@+id/tv7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color22"
+                    style="@style/TextView_Style_Content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/ll1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color22"
+                    style="@style/TextView_Style_Content" />
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color22"
+                    style="@style/TextView_Style_Content" />
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color22"
+                    style="@style/TextView_Style_Content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        style="@style/LinearLayout_Divider">
+
+        <RelativeLayout style="@style/RelativeLayout_Default">
+            <TextView
+                android:id="@+id/tv9"
+                android:text="@string/tysl_order_information"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/action_more"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/tysl_more"
+                style="@style/TextView_Style_Content" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/RecyclerView"
+            android:background="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        style="@style/LinearLayout_Divider"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写商家入住申请信息"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd4"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系人姓名"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/in_name"
+             style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd4"
+    />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd5"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系人手机"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/in_number"
+            android:hint="请输入联系人手机号码"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd5"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd6"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系人邮箱"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/in_youxiang"
+            android:hint="请输入联系人邮箱"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd6"
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/action_submit"
+        android:text="提交"
+        style="@style/TextView_Style_Submit" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LinearLayout_Divider"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我们会在2—3个工作日与您联系"/>
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咨询电话："/>
+            <TextView
+
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="025-58886512"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

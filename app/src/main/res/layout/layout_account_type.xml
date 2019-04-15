@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider">
+
+    <RelativeLayout
+        android:id="@+id/action_alipay"
+        android:paddingLeft="@dimen/activity_padding_default"
+        android:paddingRight="@dimen/activity_padding_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_normal"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/ic_alipay"
+            android:drawableStart="@drawable/ic_alipay"
+            android:layout_marginTop="@dimen/margin_14"
+            android:layout_marginBottom="@dimen/activity_margin_bottom_15"
+            android:drawablePadding="@dimen/drawable_padding_left_10"
+            android:text="@string/tysl_alipay" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_deposit_card"
+        android:paddingLeft="@dimen/activity_padding_default"
+        android:paddingRight="@dimen/activity_padding_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_normal"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/ic_bank_card"
+            android:drawableStart="@drawable/ic_bank_card"
+            android:layout_marginTop="@dimen/margin_14"
+            android:layout_marginBottom="@dimen/activity_margin_bottom_15"
+            android:drawablePadding="@dimen/drawable_padding_left_10"
+            android:text="@string/tysl_deposit_card" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+</LinearLayout>

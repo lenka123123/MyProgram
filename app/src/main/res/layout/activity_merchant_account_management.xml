@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:text="可提现金额"
+            android:id="@+id/tv1"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:text="¥ 2.67"
+            android:layout_below="@+id/tv1"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:text="提现设置"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:id="@+id/action_withdraw_deposit_settings"
+            android:layout_toLeftOf="@+id/action_withdraw_deposit"
+            android:layout_toStartOf="@+id/action_withdraw_deposit"
+            style="@style/TextView_Style_Action" />
+
+        <TextView
+            android:text="提现"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/action_withdraw_deposit"
+            style="@style/TextView_Style_Action" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:text="经营数据"
+            style="@style/TextView_Style_Title" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        style="@style/RecyclerView" />
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:text="订单信息"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:text="更多"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="@style/TextView_Style_Title" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        style="@style/RecyclerView" />
+</LinearLayout>

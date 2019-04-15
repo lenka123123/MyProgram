@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:divider="@drawable/separator"
+    android:showDividers="middle"
+    android:orientation="vertical"
+    android:padding="@dimen/drawable_padding_15"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="兑换数量"
+            android:layout_centerVertical="true"
+            style="@style/TextView_Style_Content" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.shantoo.widget.view.SnappingStepper
+                android:id="@+id/stepper"
+                app:stepper_background="@color/colorBackground"
+                app:stepper_contentBackground="@color/colorBackground"
+                app:stepper_leftButtonBackground="@color/colorBackground"
+                app:stepper_rightButtonBackground="@color/colorBackground"
+                android:layout_width="120dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tvValue"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="兑换资产"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/total_exchange_integral"
+            style="@style/TextView_Style_Content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorShopping" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin_bottom_20" />
+</LinearLayout>

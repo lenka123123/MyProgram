@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelativeLayout_Default">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/riv_head_image"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_default_head_image"
+        android:layout_width="@dimen/rounded_image_view_width_small"
+        android:layout_height="@dimen/rounded_image_view_height_small"
+        app:riv_border_color="@android:color/transparent"
+        app:riv_border_width="0dp"
+        app:riv_oval="true" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/riv_head_image"
+        android:layout_toEndOf="@+id/riv_head_image">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:text="ID"
+                android:textColor="@color/color22"
+                style="@style/TextView_Style_Content" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:text="还差1人拼成"
+                android:textColor="@color/color22"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_10"
+                style="@style/TextView_Style_Content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:text="剩余22:10:00"
+            style="@style/TextView_Style_Three"
+            android:textColor="@color/color77"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10" />
+    </LinearLayout>
+
+    <TextView
+        android:text="去拼单"
+        android:id="@+id/action_group_booking"
+        style="@style/TextView_Style_Action"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelativeLayout_Default">
+
+    <TextView
+        android:id="@+id/user_contacts"
+        style="@style/TextView_Style_Content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/user_address"
+        style="@style/TextView_Style_Content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/user_mobile"
+        style="@style/TextView_Style_Content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_address">
+
+        <com.shantoo.widget.imageview.SelectorImageView
+            android:id="@+id/selector_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/ic_un_selected"
+            app:rx_selected_src="@drawable/ic_selected" />
+
+        <TextView
+            android:id="@+id/action_set_normal_address"
+            style="@style/TextView_Style_Content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_toEndOf="@+id/selector_image_view"
+            android:layout_toRightOf="@+id/selector_image_view"
+            android:text="设置默认地址" />
+<ImageView
+   android:layout_toLeftOf="@+id/action_delete_address"
+    android:layout_toStartOf="@+id/action_delete_address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_adress_delete"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="2dp"/>
+        <TextView
+             android:id="@+id/action_delete_address"
+            style="@style/TextView_Style_Content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:layout_toLeftOf="@+id/action_edit_address"
+            android:layout_toStartOf="@+id/action_edit_address"
+            android:text="删除"/>
+        <ImageView
+            android:layout_toLeftOf="@+id/action_edit_address"
+            android:layout_toStartOf="@+id/action_edit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_adress_edmit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:id="@+id/action_edit_address"
+            style="@style/TextView_Style_Content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="编辑" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/drawable_padding_15">
+
+            <ImageView
+                android:id="@+id/dietitian_avatar"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_placeholder" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dietitian_avatar"
+                android:text="专业" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/evalution_score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/title"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/title"
+                app:clickable="false"
+                app:halfstart="false"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_ratingbar_star_fill"
+                app:starFill="@drawable/ic_ratingbar_star_empty"
+                app:starImageHeight="21dp"
+                app:starImagePadding="5dp"
+                app:starImageWidth="21dp" />
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/TextView_Style_Content"
+                android:layout_alignBottom="@+id/dietitian_avatar"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dietitian_avatar"
+                android:text="服务" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/evalution_score2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv"
+                app:clickable="false"
+                app:halfstart="false"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_ratingbar_star_fill"
+                app:starFill="@drawable/ic_ratingbar_star_empty"
+                app:starImageHeight="21dp"
+                app:starImagePadding="5dp"
+                app:starImageWidth="21dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/evalution_text"
+            android:text="evalution_text"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:paddingLeft="@dimen/drawable_padding_15"
+            android:paddingRight="@dimen/drawable_padding_15"
+            style="@style/TextView_Style_Title" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:padding="@dimen/margin_default"
+            style="@style/RecyclerView" />
+
+        <TextView
+            android:id="@+id/evalution_time"
+            android:gravity="left"
+            android:paddingLeft="@dimen/drawable_padding_15"
+            android:paddingRight="@dimen/drawable_padding_15"
+            android:paddingBottom="@dimen/drawable_padding_15"
+            android:layout_width="match_parent"
+            style="@style/TextView_Style_Time"
+            android:text="evalution_time" />
+    </LinearLayout>
+</LinearLayout>

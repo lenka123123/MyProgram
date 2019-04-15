@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/LinearLayout_Divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+  android:layout_marginLeft="10dp"
+    android:layout_gravity="center"
+    android:textColor="#999"
+    android:gravity="center_vertical"
+    android:text="请绑定持卡人本人的银行卡"
+        android:layout_width="match_parent"
+    android:layout_height="37dp">
+
+</TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_new_pwdtx1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="持卡人"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            style="@style/EditText_Default"
+            android:id="@+id/card_poople"
+            android:layout_toLeftOf="@+id/my_img"
+            android:layout_toRightOf="@+id/et_new_pwdtx1" />
+
+     <ImageView
+         android:id="@+id/my_img"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_addtixin"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_new_pwdtx2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开户行"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/card_poople_place"
+            android:hint="请选择您的开户行"
+             style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_new_pwdtx2" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_new_pwdtx"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="卡号"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:hint="无需网银/免手续"
+            android:id="@+id/card_people_number"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_new_pwdtx" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_new_pwdtx4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开户支行"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/card_kaihu_place"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_new_pwdtx4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:hint="请输入您银行卡开户网点" />
+
+    </RelativeLayout>
+
+    <Button
+        android:text="提交"
+        android:layout_marginTop="50dp"
+        android:id="@+id/action_submit"
+        style="@style/TextView_Style_Submit" />
+
+
+</LinearLayout>

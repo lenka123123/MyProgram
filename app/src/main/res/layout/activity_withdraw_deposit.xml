@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:showDividers="beginning|middle">
+
+    <include layout="@layout/widget_simple_tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/action_add_account"
+        style="@style/RelativeLayout_Default"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/ic_add_account"
+            android:drawablePadding="10dp"
+            android:text="添加账户" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_select_account"
+        style="@style/RelativeLayout_Default"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/bank_name"
+            style="@style/TextView_Style_Title"
+            android:layout_marginLeft="@dimen/activity_padding_default"
+            android:layout_toRightOf="@+id/ic_account_image"
+            android:text="农业银行" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank_name"
+            android:layout_marginLeft="@dimen/activity_padding_default"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/ic_account_image"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_jm" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:src="@drawable/ic_jm" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_jm" />
+
+            <TextView
+                android:id="@+id/bank_last_number"
+                style="@style/TextView_Style_Content"
+                android:text="6866" />
+
+            <TextView
+                android:id="@+id/cxk"
+                style="@style/TextView_Style_Content"
+                android:layout_marginLeft="@dimen/activity_margin_left_default"
+                android:text="储蓄卡" />
+        </LinearLayout>
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+
+        <ImageView
+            android:id="@+id/ic_account_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_nh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_weixing"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/TextView_Style_Content"
+            android:text="提现金额"
+            android:textColor="@color/color22" />
+
+        <TextView
+            style="@style/TextView_RelativeLayout"
+            android:text="￥"
+            android:textColor="@color/colorAC" />
+
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="@dimen/activity_margin_small"
+            android:hint="请输入整数提现金额"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/color22"
+            android:textColorHint="@color/colorEditTextHint"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/action_clear_money"
+            style="@style/ImageView_RelativeLayout_Right"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/TextView_Style_Content"
+            android:layout_below="@+id/edit_money"
+            android:text="可提现金额"
+            android:textColor="@color/colorAC"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:gravity="left"
+        android:text="您输入的金额超过可提现金额"
+        android:textColor="@color/colorF72B"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/action_immediately_withdrawal"
+        style="@style/TextView_Style_Submit_Earnings" />
+</LinearLayout>

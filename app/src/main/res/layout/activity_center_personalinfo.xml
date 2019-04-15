@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:divider="@drawable/separator"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle|end">
+
+    <LinearLayout style="@style/LinearLayout_Divider">
+
+        <RelativeLayout
+            android:id="@+id/action_edit_user_head_img"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:layout_centerVertical="true"
+                android:text="修改头像" />
+
+            <com.itheima.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_image_header"
+                android:layout_width="@dimen/image_size_style_comment"
+                android:layout_height="@dimen/image_size_style_comment"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_toLeftOf="@+id/arrow"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_default_head_image"
+                app:riv_border_color="@android:color/transparent"
+                app:riv_border_width="@dimen/drawable_padding_1"
+                app:riv_oval="true" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_selector_area"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                style="@style/TextView_Style_More2"
+                android:text="nihao" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_individual_resume"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/TextView_Style_More2"
+                android:text="nihao" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_individual_birthday"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="邀请码" />
+
+            <TextView
+                android:id="@+id/tv_yaoqingma"
+                style="@style/TextView_Style_More2"
+                android:text="w1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

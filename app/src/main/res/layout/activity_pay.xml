@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider">
+
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <TextView
+                android:text="充值金额"
+                android:id="@+id/tv_title"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color22"
+                style="@style/TextView_Style_Content" />
+
+            <LinearLayout
+                android:id="@+id/ll_pay"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="¥"
+                    android:id="@+id/rmb"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:textColor="@color/color22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_pay_number"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/ll_pay"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/colorDriver" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_3"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/LinearLayout_Divider">
+
+            <RelativeLayout
+                android:id="@+id/action_alipay"
+                style="@style/RelativeLayout_Default">
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:textColor="@color/color22"
+                    android:drawableLeft="@drawable/ic_alipay"
+                    android:drawableStart="@drawable/ic_alipay"
+                    android:drawablePadding="@dimen/drawable_padding_13"
+                    android:drawableRight="@drawable/ic_recommend"
+                    android:drawableEnd="@drawable/ic_recommend"
+                    android:text="支付宝支付" />
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/alipay_selector"
+                    android:src="@drawable/ic_un_selected"
+                    app:rx_checked="true"
+                    app:rx_selected_src="@drawable/ic_selected"
+                    style="@style/ImageView_RelativeLayout_Right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_wxpay"
+                style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:textColor="@color/color22"
+                    android:drawableLeft="@drawable/ic_wxpay"
+                    android:drawableStart="@drawable/ic_wxpay"
+                    android:drawablePadding="@dimen/drawable_padding_13"
+                    android:text="微信支付" />
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/weixing_selector"
+                    android:src="@drawable/ic_un_selected"
+                    app:rx_selected_src="@drawable/ic_selected"
+                    style="@style/ImageView_RelativeLayout_Right" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/action_pay"
+            style="@style/TextView_Style_Submit_Earnings"
+            android:text="确认充值" />
+    </LinearLayout>
+</LinearLayout>

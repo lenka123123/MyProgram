@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+       android:layout_gravity="center"
+        android:gravity="center_vertical|right"
+       android:id="@+id/zhihui_ft_lin"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/zhihui_ft_number"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共2件商品"/>
+        <TextView
+            android:id="@+id/zhihui_ft_price"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共2件商品"/>
+    </LinearLayout>
+<View
+
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#eee"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"></View>
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/zhihui_people1"
+        android:layout_gravity="center"
+        />
+
+          <TextView
+              android:id="@+id/zhihui_ft_name"
+              android:layout_marginLeft="10dp"
+            android:gravity="center"
+              android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nihao "/>
+    </LinearLayout>
+<View
+    android:layout_marginTop="2dp"
+    android:layout_width="1dp"
+    android:layout_height="36dp"
+    android:background="#eee"></View>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhihui_call"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/zhihui_ft_phone"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nihao "/>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

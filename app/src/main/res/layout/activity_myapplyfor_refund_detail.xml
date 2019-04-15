@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider">
+
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <LinearLayout
+        style="@style/LinearLayout_Divider">
+
+        <RelativeLayout
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:text="退款金额"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/tv_refund_amount"
+                android:text="¥20"
+                android:layout_alignParentRight="true"
+                style="@style/TextView_Style_Money" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:text="退款账户"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:text="原支付账户"
+                android:layout_alignParentRight="true"
+                style="@style/TextView_Style_Content" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:text="退款原因"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:text="取消申请咨询服务"
+                android:layout_alignParentRight="true"
+                style="@style/TextView_Style_Content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        style="@style/LinearLayout_Divider">
+        <RelativeLayout
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:text="服务申请"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:text="2017-11-11"
+                style="@style/TextView_Style_Content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:text="拒绝服务"
+                style="@style/TextView_Style_Title" />
+
+            <TextView
+                android:id="@+id/tv_cancle_time"
+                android:text="2017-11-11"
+                android:layout_alignParentRight="true"
+                style="@style/TextView_Style_Content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_10"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:text="退款状态"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:visibility="gone"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="7个工作日内退款至原工作账户"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:text="等待退款"
+            android:id="@+id/tv_state"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/TextView_Style_Content" />
+    </RelativeLayout>
+
+</LinearLayout>

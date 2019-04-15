@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelativeLayout_Default">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/riv_head_image"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_default_head_image"
+        android:layout_width="@dimen/rounded_image_view_width"
+        android:layout_height="@dimen/rounded_image_view_height"
+        app:riv_border_color="@android:color/transparent"
+        app:riv_border_width="@dimen/image_view_border_width"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:text="ID"
+        android:layout_centerVertical="true"
+        style="@style/TextView_RelativeLayout_Title"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_toRightOf="@+id/riv_head_image"
+        android:layout_toEndOf="@+id/riv_head_image" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/action_group_booking"
+        android:layout_toStartOf="@+id/action_group_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:text="还差1人拼成"
+            style="@style/TextView_RelativeLayout_Title"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:text="剩余22:10:00"
+            style="@style/TextView_RelativeLayout_Item_Content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default" />
+    </LinearLayout>
+
+    <TextView
+        android:text="去拼单"
+        android:id="@+id/action_group_booking"
+        style="@style/TextView_Style_Action"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

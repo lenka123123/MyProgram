@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#44acacac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.shantoo.widget.toolbar.WidgetBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorToolBarBackground"
+        android:minHeight="?attr/actionBarSize" />
+</LinearLayout>

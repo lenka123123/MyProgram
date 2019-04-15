@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="173dp"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/item_bg_normal"
+    android:gravity="center">
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@mipmap/ic_launcher"
+    android:scaleType="fitXY"
+
+    />
+<TextView
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:lines="2"
+    android:textColor="#333"
+    android:textSize="14sp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="的好多好多假期后的滑动啊好的啦"/>
+ <LinearLayout
+     android:layout_marginTop="5dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+     <TextView
+         android:textColor="#ff7608"
+         android:layout_marginLeft="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="$245.00"/>
+     <TextView
+         android:textColor="#999"
+         android:layout_marginLeft="12dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="13"/>
+     <TextView
+         android:textColor="#999"
+         android:layout_weight="1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="人购买"/>
+     <ImageView
+android:layout_marginRight="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/ic_zhihui_shopcar"/>
+
+ </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/iv_store_logo"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/image_size_style_default"
+        android:layout_height="@dimen/image_size_style_default" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_toRightOf="@+id/iv_store_logo"
+        android:layout_toEndOf="@+id/iv_store_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_marginTop="@dimen/margin_6"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@+id/tv_service_score"
+            android:layout_marginTop="@dimen/margin_6"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_marginTop="@dimen/margin_6"
+            style="@style/TextView_Style_Content" />
+    </LinearLayout>
+</RelativeLayout>

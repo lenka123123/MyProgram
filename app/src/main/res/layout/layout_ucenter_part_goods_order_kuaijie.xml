@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ucenter_part_goods_order"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="@dimen/margin_10"
+    style="@style/LinearLayout_Divider">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="快捷工具" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/drawable_padding_15"
+        android:paddingTop="@dimen/drawable_padding_15">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+  <LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+            <TextView
+
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_zichan"
+                android:text="资产包" />
+            <TextView
+               android:layout_marginTop="20dp"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_dfk"
+                android:text="我的收藏" />
+</LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                      style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_ucenter_dfk"
+                    android:text="@string/tysl_state_wait_pay" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/TextView_UCenter_Order"
+                    android:drawableTop="@drawable/ic_person_setting"
+                     />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

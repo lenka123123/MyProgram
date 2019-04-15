@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/close_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hongbao_close" />
+
+        <ImageView
+
+            android:id="@+id/hongbao_body"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_below="@+id/close_hongbao"
+            android:src="@drawable/hongbao" />
+
+        <ImageView
+            android:id="@+id/hongbao_body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hongbao_body"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hongbao_get" />
+
+
+        <ImageView
+
+            android:id="@+id/dsyt_howmuch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_hongbao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/hongbao_howmuch" />
+
+        <ImageView
+            android:id="@+id/dsty_hongbao_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_hongbao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/hongbao_1"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/dsty_hongbao_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_hongbao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/hongbao_4"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

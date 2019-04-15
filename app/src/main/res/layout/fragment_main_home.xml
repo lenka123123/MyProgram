@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+ <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+   <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:statusBarScrim="@color/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <!--<ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_full_screen"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax" />-->
+
+            <!--<LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/status_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorPrimary"/>
+
+                &lt;!&ndash;Banner图&ndash;&gt;
+                <com.itheima.loopviewpager.LoopViewPager
+                    android:id="@+id/lvp_pager"
+                    android:fitsSystemWindows="true"
+                    android:minHeight="140dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:background="@color/colorWhite"
+                    app:layout_collapseMode="parallax"
+                    app:animTime="1000"
+                    app:loopTime="3000">
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.itheima.loopviewpager.LoopDotsView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            app:dotRange="10dp"
+                            app:dotShape="oval"
+                            app:dotSize="6dp" />
+                    </RelativeLayout>
+                </com.itheima.loopviewpager.LoopViewPager>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/status_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorPrimary"/>
+
+                <!--Banner图-->
+                <com.itheima.loopviewpager.LoopViewPager
+                    android:id="@+id/lvp_pager"
+                    android:minHeight="142dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:background="@color/colorWhite"
+                    app:layout_collapseMode="parallax"
+                    app:animTime="1000"
+                    app:loopTime="3000">
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.itheima.loopviewpager.LoopDotsView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            app:dotRange="10dp"
+                            app:dotShape="oval"
+                            app:dotSize="6dp" />
+                    </RelativeLayout>
+                </com.itheima.loopviewpager.LoopViewPager>
+            </LinearLayout>
+
+            <com.shantoo.widget.toolbar.WidgetBar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView style="@style/ScrollView">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground">
+
+                <!--导航-->
+                <include layout="@layout/layout_home_navigation" />
+                <!--公告-->
+                <include layout="@layout/layout_notice" />
+                <!--首页内容-->
+                <include layout="@layout/layout_home_content" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

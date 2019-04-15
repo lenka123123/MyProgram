@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LinearLayout_Divider">
+    <include layout="@layout/layout_account_type" />
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/cd_name"
+    android:layout_marginLeft="15dp"
+    android:gravity="center_vertical"
+    android:textColor="#999"
+    android:textSize="12sp"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text=""/>
+    </LinearLayout>
+   <LinearLayout
+       android:gravity="center_vertical"
+       android:id="@+id/zhihui_add_bangdin"
+       android:background="@drawable/item_bg_normal"
+       android:layout_width="match_parent"
+       android:layout_height="90dp"
+       android:orientation="horizontal">
+
+<TextView
+    android:layout_marginLeft="15dp"
+    android:textSize="12sp"
+    android:textColor="#333"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="您现在还没有绑定提现银行卡，请"/>
+       <TextView
+           android:id="@+id/zhihui_card_bangdin"
+           android:textColor="#ff7608"
+           android:textSize="12sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="立即去绑定"/>
+
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/zhihui_add_xianshi"
+           android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/item_bg_normal"
+        android:orientation="horizontal">
+        
+<ImageView
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/bank_total"/>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/cd_bank"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="招商银行"/>
+    <TextView
+        android:id="@+id/cd_number"
+        android:layout_marginTop="10dp"
+        android:textColor="#999"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尾号123储蓄卡"/>
+
+
+</LinearLayout>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_go"/>
+ </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/zhihui_add_tixian"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+
+        android:background="@drawable/item_bg_normal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<TextView
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:textColor="#666"
+    android:textSize="14sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="提现金额"/>
+      <EditText
+          android:id="@+id/get_money"
+          android:layout_marginLeft="10dp"
+          android:textSize="24sp"
+          android:textColor="#333"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         />
+    </LinearLayout>
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        ></View>-->
+    <LinearLayout
+        android:background="@drawable/item_bg_normal"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal">
+<TextView
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:textSize="12sp"
+    android:layout_height="wrap_content"
+    android:text="可提现金额："/>
+<TextView
+    android:textSize="12sp"
+    android:id="@+id/keti_money"
+    android:layout_gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="￥122.11"/>
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(提现金额少于100元收2元手续费)"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/comit"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="提交"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tv_title"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/article_image"
+        android:textColor="#222"
+        android:gravity="center"
+        android:textSize="15sp"
+
+       />
+
+
+    <ImageView
+        android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+         android:id="@+id/article_image"
+         android:layout_width="115dp"
+         android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_placeholder" />
+
+    <TextView
+
+        android:id="@+id/tv_click_num"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_browse"
+        android:drawablePadding="@dimen/drawable_padding_5"
+        style="@style/TextView_Style_Three"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_good_num"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/tv_click_num"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_good"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:drawablePadding="@dimen/drawable_padding_5"
+        style="@style/TextView_Style_Three"
+        android:text="" />
+<!--
+    <TextView
+        android:id="@+id/tv_comments_nums"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/tv_good_num"
+        android:layout_marginTop="@dimen/margin_default"
+        android:drawableLeft="@drawable/ic_comments"
+
+        android:layout_marginLeft="@dimen/margin_default"
+        android:drawablePadding="@dimen/drawable_padding_5"
+        style="@style/TextView_Style_Three"
+        android:text="" />-->
+
+    <TextView
+        android:id="@+id/add_time"
+        android:layout_below="@+id/tv_title"
+        android:layout_toLeftOf="@+id/article_image"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:gravity="right"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:drawablePadding="@dimen/drawable_padding_6"
+        style="@style/TextView_Style_Three"
+        android:text="" />
+</RelativeLayout>

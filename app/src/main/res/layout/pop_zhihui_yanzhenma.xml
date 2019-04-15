@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_normal">
+<ImageView
+
+    android:src="@drawable/pop_delete"
+    android:id="@+id/pop_zhihui_delete"
+    android:layout_marginRight="20dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="25dp"
+    android:layout_width="10dp"
+    android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/pop_zhihui_key"
+        android:textColor="#333"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pop_zhihui_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入取货验证码"
+         />
+    <LinearLayout
+        android:id="@+id/pop_zhihui_password"
+        android:layout_below="@+id/pop_zhihui_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/shape_input_area"
+        android:orientation="horizontal" >
+
+        <!--
+             inputType设置隐藏密码明文
+             textSize设置大一点，否则“点”太小了，不美观
+        -->
+
+        <TextView
+            android:id="@+id/tv_pass1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/tv_pass2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/tv_pass3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/tv_pass4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/tv_pass5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/tv_pass6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="32sp" />
+    </LinearLayout>
+<TextView
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:layout_marginTop="28dp"
+    android:layout_below="@+id/pop_zhihui_password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="提交"/>
+</RelativeLayout>

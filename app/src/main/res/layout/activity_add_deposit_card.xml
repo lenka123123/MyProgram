@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:showDividers="beginning|middle">
+
+    <include layout="@layout/widget_simple_tool_bar" />
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextView_Style_Title"
+            android:layout_width="70dp"
+            android:gravity="start"
+            android:text="@string/tysl_name" />
+
+        <EditText
+            android:id="@+id/account_name"
+            style="@style/EditText_Earnings"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name"
+            android:hint="@string/tysl_account_name_hint" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/account"
+            style="@style/TextView_Style_Title"
+            android:layout_width="70dp"
+            android:gravity="left"
+            android:text="@string/tysl_deposit_card_id" />
+
+        <EditText
+            android:id="@+id/account_code"
+            style="@style/EditText_Earnings"
+            android:inputType="number"
+            android:maxLength="20"
+            android:layout_toRightOf="@+id/account"
+            android:layout_toEndOf="@+id/account"
+            android:hint="@string/tysl_deposit_card_hint" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_deposit_bank"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/deposit_bank_title"
+            style="@style/TextView_Style_Title"
+            android:layout_width="70dp"
+            android:text="@string/tysl_deposit_bank" />
+
+        <TextView
+            android:id="@+id/deposit_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_toRightOf="@+id/deposit_bank_title"
+            android:text="@string/tysl_deposit_bank_hint"
+            android:textColor="@color/colorAC"
+            android:textSize="@dimen/text_size_15"
+            android:layout_alignParentTop="true" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/action_immediately_add"
+        style="@style/TextView_Style_Submit_Earnings"
+        android:text="@string/tysl_immediately_add" />
+</LinearLayout>

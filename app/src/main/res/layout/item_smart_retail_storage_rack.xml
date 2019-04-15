@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:background="@drawable/ic_placeholder"
+        android:layout_width="@dimen/image_size_width"
+        android:layout_height="@dimen/image_size_height" />
+
+    <TextView
+        android:text="太宜食聊"
+        android:id="@+id/tv_goods_name"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_alignTop="@+id/iv_image"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_toEndOf="@+id/iv_image"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:text="地址地址地址地址地址"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_alignBottom="@+id/iv_image"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_toEndOf="@+id/iv_image"
+        style="@style/TextView_Style_Content" />
+
+    <ImageView
+        android:id="@+id/iv_shop_cart"
+        android:src="@drawable/ic_shop_cart1"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/iv_image"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+</RelativeLayout>

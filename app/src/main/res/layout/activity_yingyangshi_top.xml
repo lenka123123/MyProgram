@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/yingyangshi_top"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/yingyangshi_yinyee"
+        android:textColor="#ff7608"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="dasa"/>
+    <TextView
+        android:layout_marginTop="7dp"
+        android:textSize="13sp"
+        android:textColor="#999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品营业额"/>
+    
+    
+</LinearLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:background="#eee"
+        android:layout_height="40dp"
+        android:layout_gravity="center"></View>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+           android:id="@+id/yingyangshi_service_price"
+            android:textColor="#ff7608"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dasa"/>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:textSize="13sp"
+            android:textColor="#999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务收益"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

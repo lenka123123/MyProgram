@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/drawable_padding_15">
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/good_mobile_detail"
+            android:layout_toStartOf="@+id/good_mobile_detail"
+            android:background="@color/colorBackground" />
+
+        <TextView
+            android:id="@+id/good_mobile_detail"
+            style="@style/TextView_Style_Title"
+            android:layout_centerInParent="true"
+            android:text="商品详情" />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_toRightOf="@+id/good_mobile_detail"
+            android:layout_toEndOf="@+id/good_mobile_detail"
+            android:background="@color/colorBackground" />
+    </RelativeLayout>
+
+    <com.itheima.view.BridgeWebView
+        android:id="@+id/bridge_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

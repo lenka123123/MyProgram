@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        style="@style/RelativeLayout_Default"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginLeft="21dp"
+                android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品描述"
+            />
+        <com.hedgehog.ratingbar.RatingBar
+            android:layout_marginLeft="21dp"
+             android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:clickable="true"
+            app:halfstart="false"
+            app:starCount="5"
+            app:starEmpty="@drawable/ic_ratingbar_star_empty"
+            app:starFill="@drawable/ic_ratingbar_star_fill"
+            app:starImageHeight="21dp"
+            app:starImagePadding="5dp"
+            app:starImageWidth="30dp" />
+    </LinearLayout>
+    <EditText
+        style="@style/RelativeLayout_Default"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@null"
+        android:hint="赶快发表您的使用心得吧~"
+        android:gravity="top"
+        android:textColorHighlight="@color/colorTextHint"
+        android:lines="6"
+        android:maxLines="6" />
+<LinearLayout
+    style="@style/LinearLayout_Divider"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        style="@style/RelativeLayout_Default">
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="服务态度"/>
+        <com.hedgehog.ratingbar.RatingBar
+          android:layout_marginLeft="100dp"
+             android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:clickable="true"
+            app:halfstart="false"
+            app:starCount="5"
+            app:starEmpty="@drawable/ic_ratingbar_star_empty"
+            app:starFill="@drawable/ic_ratingbar_star_fill"
+            app:starImageHeight="21dp"
+            app:starImagePadding="5dp"
+            app:starImageWidth="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        style="@style/RelativeLayout_Default">
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="物流配送"/>
+        <com.hedgehog.ratingbar.RatingBar
+
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:clickable="true"
+            app:halfstart="false"
+            app:starCount="5"
+            app:starEmpty="@drawable/ic_ratingbar_star_empty"
+            app:starFill="@drawable/ic_ratingbar_star_fill"
+            app:starImageHeight="21dp"
+            app:starImagePadding="5dp"
+            app:starImageWidth="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/action_submit"
+        style="@style/TextView_Style_Submit" />
+
+
+</LinearLayout>

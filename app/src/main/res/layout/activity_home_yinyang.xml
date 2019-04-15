@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/action_edit_password"
+        style="@style/RelativeLayout_Default">
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:id="@+id/first_home_yinyang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_yinyang"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/first_home_yinyang"
+            style="@style/TextView_Style_Title"
+            android:text="服务之星" />
+        <TextView
+            android:id="@+id/home_fuwuzhixin_more"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/first_home_more"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"/>
+        <ImageView
+            android:id="@+id/first_home_more"
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/id_recyclerview_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

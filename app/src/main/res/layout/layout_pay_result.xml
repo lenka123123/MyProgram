@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	style="@style/LinearLayout_Divider">
+
+	<include layout="@layout/widget_simple_tool_bar"/>
+
+	<ImageView
+		android:background="@drawable/ic_pay_result"
+		android:layout_marginTop="@dimen/margin_30"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="50dp"
+		android:layout_height="50dp" />
+
+	<TextView
+		android:id="@+id/result"
+		android:textSize="20sp"
+		android:layout_marginTop="@dimen/margin_30"
+		style="@style/TextView_Style_Title"
+		android:layout_gravity="center_horizontal" />
+
+	<TextView
+		android:id="@+id/action_pay_finish"
+		style="@style/TextView_Style_Submit"
+		android:layout_marginTop="@dimen/margin_90"
+		android:background="@drawable/drawable_button_bg_withdraw_deposit"
+		android:text="完成" />
+</LinearLayout>

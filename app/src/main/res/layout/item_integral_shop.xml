@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/drawable_padding_15"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/goods_picture"
+        android:scaleType="fitStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_marginTop="@dimen/margin_5"
+        style="@style/TextView_Style_Content"
+        android:gravity="start"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@+id/goods_picture" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goods_name"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:text="所需资产: " />
+
+        <TextView
+            android:id="@+id/exchange_integral"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_style_one"
+            android:textColor="@color/colorShopping" />
+    </LinearLayout>
+</RelativeLayout>

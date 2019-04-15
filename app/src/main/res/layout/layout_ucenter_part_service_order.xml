@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ucenter_part_service_order"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="@dimen/margin_10"
+       android:visibility="gone"
+    style="@style/LinearLayout_Divider">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/action_check_more_service_order"
+            style="@style/TextView_Style_More"
+            android:text="查看所有订单" />
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="服务订单" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/drawable_padding_15"
+        android:paddingTop="@dimen/drawable_padding_15">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_service_order_wait_verify"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_dqr"
+                android:text="@string/tysl_state_wait_verify" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorDriver" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_service_order_refused"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_yjj"
+                android:text="@string/tysl_state_refused" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorDriver" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_service_order_service_ing"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_fwz"
+                android:text="@string/tysl_state_service_ing" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorDriver" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_service_order_have_expired"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_ygq"
+                android:text="@string/tysl_state_have_expired" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_product_item"
+    android:layout_centerInParent="true"
+   android:layout_width="185dp"
+    android:layout_height="270dp">
+
+    <ImageView
+      android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:id="@+id/goods_image"
+        android:background="@drawable/ic_placeholder"
+        android:layout_width="185dp"
+        android:layout_height="185dp" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/scalenumber"
+        android:background="@drawable/drawable_btn_bg_color_refreshprimary_right"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="销量：221"
+        android:textColor="@color/white"/>
+
+
+
+
+    <FrameLayout
+
+        android:layout_below="@+id/right_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginStart="@dimen/margin_default"
+                android:text="￥"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/right_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:text="10.0"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="end|center_vertical">
+
+            <ImageView
+                android:id="@+id/right_product_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="invisible"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_rxandroid_widget_shop_cart_minus" />
+
+            <TextView
+                android:id="@+id/right_product_account"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="1"
+                android:visibility="invisible"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/right_product_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_shop_cart1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:lines="2"
+        android:id="@+id/right_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goods_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+</RelativeLayout>

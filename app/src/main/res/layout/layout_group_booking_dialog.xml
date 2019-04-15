@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/drawable_padding_15"
+    android:paddingRight="@dimen/drawable_padding_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="参与ID的拼单"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:id="@+id/action_submit"
+        android:text="参与拼单"
+        style="@style/TextView_Style_Submit" />
+</RelativeLayout>

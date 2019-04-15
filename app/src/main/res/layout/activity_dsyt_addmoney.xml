@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="@drawable/dsyt_add_money_bg">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/back_white"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"/>
+<LinearLayout
+    android:padding="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:background="@drawable/dsyt_bg_zengzhi"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <WebView
+
+        android:id="@+id/bridge_web_view"
+        android:background="@null"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </WebView>
+</LinearLayout>
+    <TextView
+        android:id="@+id/dsyt_zengzhi_txt"
+        android:textSize="18sp"
+         android:background="@drawable/dsyt_zengzhi_btnbg"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请护照"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/dsyt_zengzhi_xiazai_bg"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/android_down"
+            android:src="@drawable/dsyt_zengzhi_android"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ios_down"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/dsyt_zengzhi_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

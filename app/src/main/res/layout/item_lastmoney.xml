@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="@color/white">
+   <TextView
+       android:textSize="14sp"
+       android:textColor="#333"
+       android:layout_marginLeft="10dp"
+       android:id="@+id/item_yue"
+       android:layout_marginTop="14dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="余额购买"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#999"
+        android:id="@+id/item_time"
+       android:layout_marginLeft="10dp"
+        android:layout_below="@+id/item_yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111"/>
+
+    <TextView
+        android:id="@+id/item_price"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nihao2"/>
+
+
+</RelativeLayout>

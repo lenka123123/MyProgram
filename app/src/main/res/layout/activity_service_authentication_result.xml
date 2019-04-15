@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/service_authentication_success"
+            android:padding="@dimen/activity_padding_left"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_selected"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textSize="30sp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tysl_authentication_result_success"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                style="@style/TextView_Style_Content"
+                android:text="您已成为太宜食聊平台认证临床营养师，可以为用户提供健康咨询服务啦" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/service_authentication_checking"
+            android:padding="@dimen/activity_padding_left"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_selected"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textSize="30sp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tysl_authentication_result_checking"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/apply_for_date"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                style="@style/TextView_Style_Content"
+                android:text="申请日期: 2017-12-20" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                style="@style/TextView_Style_Content"
+                android:text="您的认证资料已经提交成功，我们会在7个工作日内完成审核，谢谢您对我们的支持!" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/service_authentication_not_pass"
+            android:padding="@dimen/activity_padding_left"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_selected"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textSize="30sp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tysl_authentication_result_not_pass"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                style="@style/TextView_Style_Content"
+                android:text="您的身份证反面照片过于模糊，请您重新申请并提交清晰照片，谢谢!" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

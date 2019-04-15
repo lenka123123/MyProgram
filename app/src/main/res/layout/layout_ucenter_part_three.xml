@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_favorites_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/action_check_goods_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favorite_good_total"
+            style="@style/TextView_Style_Number"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="0" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:layout_weight="1"
+            android:text="商品收藏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_check_shop_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favorite_store_total"
+            style="@style/TextView_Style_Number"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="0" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:layout_weight="1"
+            android:text="店铺收藏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_check_dietician_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/favorite_dietitian_total"
+            style="@style/TextView_Style_Number"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="0" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:layout_weight="1"
+            android:text="顾问收藏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_check_article_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favorite_article_total"
+            style="@style/TextView_Style_Number"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="0" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:layout_weight="1"
+            android:text="文章收藏" />
+    </LinearLayout>
+</LinearLayout>

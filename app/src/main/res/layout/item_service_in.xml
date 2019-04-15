@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/type_icon"
+        style="@style/ImageView_RelativeLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/type_name"
+        style="@style/TextView_RelativeLayout_Item"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/type_icon"
+        android:text="" />
+
+    <ImageView style="@style/ImageView_RelativeLayout_Right" />
+
+</RelativeLayout>

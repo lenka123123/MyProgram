@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/action_goods_sort_gid"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sort_sales"
+                android:text="新推荐"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_sort_sales"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_sort_down_sales"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_goods_sort_gp"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_goods_sort_gp"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:text="商品价格" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_goods_sort_gp"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_goods_sort_gpa"
+                    android:src="@drawable/ic_unselect_up"
+                    app:rx_selected_src="@drawable/ic_select_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_goods_sort_gpd"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_goods_sort_gc"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_goods_sort_gc"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:text="荐购奖励" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_goods_sort_gc"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_goods_sort_gca"
+                    android:src="@drawable/ic_unselect_up"
+                    app:rx_selected_src="@drawable/ic_select_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_goods_sort_gcd"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RadioGroup>
+
+    <include layout="@layout/layout_swipe_refresh"/>
+
+</LinearLayout>

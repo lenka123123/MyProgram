@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <TextView
+        android:text="中国银行"
+        android:id="@+id/tv_id_cart_name"
+        style="@style/TextView_Style_Content" />
+
+    <TextView
+        android:text="杨兵兵"
+        android:id="@+id/id_user_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/TextView_Style_Content" />
+
+    <TextView
+        android:text="卡号：445345345"
+        android:id="@+id/tv_id_cart_number"
+        android:layout_below="@+id/tv_id_cart_name"
+        android:layout_marginTop="@dimen/margin_default"
+        style="@style/TextView_Style_Content" />
+
+    <View
+        android:id="@+id/id_line"
+        android:layout_below="@+id/tv_id_cart_number"
+        android:background="@color/colorDriver"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_default" />
+
+    <TextView
+        android:text="删除"
+        android:id="@+id/action_delete"
+        android:layout_below="@+id/id_line"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="@dimen/drawable_padding_5"
+        android:layout_marginTop="@dimen/margin_default"
+        android:drawableLeft="@drawable/ic_smart_retail_delete"
+        android:drawableStart="@drawable/ic_smart_retail_delete"
+        style="@style/TextView_Style_Content" />
+</RelativeLayout>

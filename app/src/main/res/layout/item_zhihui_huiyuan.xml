@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:background="@drawable/item_bg_normal"
+    android:layout_width="match_parent"
+    android:layout_height="102dp">
+  <ImageView
+
+      android:id="@+id/zhihui_it_img"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="8dp"
+      android:layout_width="70dp"
+      android:layout_height="70dp" />
+     <TextView
+         android:id="@+id/zhihui_it_call"
+         android:textSize="15sp"
+         android:textColor="#333333"
+         android:layout_marginLeft="16dp"
+         android:layout_toRightOf="@+id/zhihui_it_img"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:layout_marginTop="20dp"/>
+<TextView
+    android:id="@+id/zhihui_it_title"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_toRightOf="@+id/zhihui_it_img"
+   android:layout_below="@+id/zhihui_it_call"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""/>
+
+    <TextView
+        android:id="@+id/zhihui_it_time"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/zhihui_it_img"
+        android:layout_below="@+id/zhihui_it_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:id="@+id/zhihui_last_time"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/zhihui_it_time"
+        android:layout_below="@+id/zhihui_it_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
+</LinearLayout>

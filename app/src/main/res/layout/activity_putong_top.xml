@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/putong_top"
+    android:background="@color/white"
+    android:orientation="horizontal">
+<LinearLayout
+    android:id="@+id/lin_dsyue"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/putong_yue"
+        android:textColor="#ff7608"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="0.00"/>
+    <TextView
+        android:layout_marginTop="7dp"
+        android:textSize="13sp"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="达事余额"/>
+    
+    
+</LinearLayout>
+    
+    <View
+        android:layout_width="1dp"
+        android:background="#eee"
+        android:layout_height="40dp"
+        android:layout_gravity="center"></View>
+    <LinearLayout
+        android:id="@+id/lin_dsmoney"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+           android:id="@+id/putong_money"
+            android:textColor="#ff7608"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:textSize="13sp"
+            android:textColor="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的钱包"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

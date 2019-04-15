@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/account_code"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_centerVertical="false"
+        style="@style/TextView_RelativeLayout_Item" />
+
+    <TextView
+        android:id="@+id/apply_time"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_below="@+id/account_code"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_centerVertical="false"
+        style="@style/TextView_RelativeLayout_Item_Content" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/withdraw_money"
+            android:textStyle="bold"
+            style="@style/TextView_RelativeLayout_Item" />
+
+        <TextView
+            android:id="@+id/withdraw_state"
+            android:layout_marginTop="@dimen/margin_13"
+            style="@style/TextView_RelativeLayout_Item_Content" />
+    </LinearLayout>
+</RelativeLayout>

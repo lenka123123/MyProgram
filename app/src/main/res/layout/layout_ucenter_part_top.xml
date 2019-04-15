@@ -1,0 +1,281 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ucenter_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yljk_center_bg"
+    android:paddingTop="@dimen/margin_30">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/action_settings2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:src="@drawable/ic_person_setting" />
+       <RelativeLayout
+           android:visibility="invisible"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginEnd="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:id="@+id/action_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_message_white"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/shape_circle2" />
+          <TextView
+              android:visibility="invisible"
+              android:gravity="center"
+              android:layout_marginLeft="15dp"
+              android:textSize="5sp"
+              android:layout_width="10dp"
+              android:layout_height="10dp"
+              android:text=""/>
+
+       </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+            关键属性解释：
+            app:riv_corner_radius ： 四周角度
+            app:riv_border_width ：  描边宽度
+            app:riv_border_color ： 描边颜色
+            app:riv_oval="false"  ： 是否是圆型 ， 若为true， 则上面的radius可不用设置。-->
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/user_head_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_margin_bottom_15"
+        android:layout_marginStart="@dimen/activity_margin_bottom_15"
+        android:layout_width="@dimen/image_size_style_header"
+        android:layout_height="@dimen/image_size_style_header"
+        android:background="@drawable/ic_default_head_image"
+        android:layout_below="@+id/ll_top"
+        android:scaleType="fitCenter"
+        app:riv_border_color="@color/colorWhite"
+        app:riv_border_width="0dp"
+        app:riv_oval="true" />
+<RelativeLayout
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+    <ImageView
+        android:visibility="gone"
+       android:layout_marginTop="40dp"
+        android:id="@+id/user_sex"
+        android:src="@drawable/yingys_man"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+</RelativeLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_toRightOf="@+id/user_head_img"
+        android:layout_toEndOf="@+id/user_head_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/action_login"
+            android:text="@string/tysl_login"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_style_one" />
+
+        <RelativeLayout
+            android:id="@+id/user_info"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:textSize="@dimen/text_size_style_one"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/type_name"
+                android:layout_below="@+id/user_name"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:background="@drawable/drawable_btn_bg_color_primary2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="普通用户"
+
+                android:textSize="@dimen/text_size_style_two"
+                android:textColor="#fbc57a" />
+
+            <TextView
+                android:visibility="gone"
+                android:text="签到"
+                android:id="@+id/qiandao"
+                style="@style/TextView_Style_Action"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="@dimen/margin_default"/>
+
+
+            <TextView
+                android:text="立即充值"
+                android:id="@+id/action_pay"
+                android:visibility="gone"
+                style="@style/TextView_Style_Action"
+                android:layout_alignBottom="@+id/type_name"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/ucenter_part_user_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/action_my_dietician"
+                style="@style/LinearLayout_UCenter">
+
+                <TextView
+                    style="@style/TextView_Style_Content_White"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_ucenter_wdjk"
+                    android:drawablePadding="@dimen/margin_top"
+                    android:drawableStart="@drawable/ic_ucenter_wdjk"
+                    android:text="@string/tysl_my_health" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/drive_size"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorDriver" />
+
+            <LinearLayout
+                android:id="@+id/action_my_apply_for"
+                style="@style/LinearLayout_UCenter">
+
+                <TextView
+                    style="@style/TextView_Style_Content_White"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_ucenter_wdsq"
+                    android:drawableStart="@drawable/ic_ucenter_wdsq"
+                    android:drawablePadding="@dimen/margin_top"
+                    android:text="服务订单" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ucenter_part_dietician_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/dietician_integral"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dietician_integral_content"
+                    style="@style/TextView_Style_Number"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    style="@style/TextView_Style_Content_White"
+                    android:text="余额:" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/drive_size"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorDriver" />
+
+            <LinearLayout
+                android:id="@+id/dietician_earnings"
+                style="@style/LinearLayout_UCenter"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dietician_earnings_content"
+                    style="@style/TextView_Style_Number"
+                    android:text="0"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    style="@style/TextView_Style_Content_White"
+                    android:layout_gravity="center"
+                    android:text="我的收益(元)" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dsyt_bg_yaoqin">
+    <ScrollView
+        android:id="@+id/my_yaoqinma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/my_yaoqinma1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+       <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_white"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/yaoqin_share"
+            android:layout_width="22dp"
+            android:visibility="gone"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/goods_share"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="112dp"
+            android:text="快人一步，链上区块，请和我一起开启"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+<ImageView
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:src="@drawable/dsyt_bg_yun"/>
+<TextView
+    android:layout_marginTop="11dp"
+    android:layout_gravity="center"
+    android:textSize="19sp"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="云链健康"/>
+
+            <TextView
+
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="健康财富之旅！"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dsyt_bg_yaoqingma"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="18dp">
+    <TextView
+        android:id="@+id/dsyt_yaoqin_txt"
+        android:textSize="36sp"
+        android:textColor="#b3fdfdfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""/>
+</RelativeLayout>
+
+          <ImageView
+            android:id="@+id/dsyt_yaoqin_img"
+            android:layout_gravity="center"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="15dp"
+            />
+
+
+<TextView
+    android:layout_marginBottom="15dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="扫码下载云链健康APP"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

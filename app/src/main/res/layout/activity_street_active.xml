@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_margin="@dimen/margin_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        style="@style/TextView_Style_Content" />
+
+    <LinearLayout
+        android:padding="@dimen/drawable_padding_15"
+        android:divider="@drawable/separator"
+        android:showDividers="middle|end"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content"
+            android:gravity="start"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="@dimen/margin_5"
+            style="@style/TextView_Style_Content"  />
+
+        <TextView
+            android:id="@+id/time"
+            android:drawableLeft="@mipmap/ic_time"
+            android:drawableStart="@mipmap/ic_time"
+            android:layout_marginTop="@dimen/margin_default"
+            android:drawablePadding="@dimen/drawable_padding_6"
+            android:layout_marginBottom="@dimen/margin_5"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/address"
+            android:drawableLeft="@mipmap/ic_position"
+            android:drawableStart="@mipmap/ic_position"
+            android:layout_marginTop="@dimen/margin_default"
+            android:drawablePadding="@dimen/drawable_padding_6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/margin_5"
+            style="@style/TextView_Style_Content" />
+    </LinearLayout>
+</LinearLayout>

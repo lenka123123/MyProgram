@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--健康服务天团-->
+    <ImageView
+        android:id="@+id/action_tian_tuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:scaleType="fitStart" />
+
+    <include layout="@layout/activity_home_yinyang"></include>
+
+    <include layout="@layout/activity_home_place"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ad_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+    <!-- 智慧零售-->
+    <include layout="@layout/activity_home_zhihui"></include>
+
+    <!-- 健康专栏-->
+    <include layout="@layout/activity_home_health"></include>
+
+    <!--营养师专栏和健康365-->
+    <LinearLayout
+        style="@style/LinearLayout_Divider"
+        android:background="@color/colorWhite"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dietitian_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitStart" />
+
+        <ImageView
+            android:id="@+id/jk365_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitStart" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ad_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/colorWhite"
+        android:scaleType="fitStart"
+        android:visibility="gone" />
+
+    <!-- 发黑黑 -->
+    <ImageView
+        android:id="@+id/action_faheihei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:scaleType="fitStart" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <!--营养师推荐-->
+    <TextView
+        style="@style/TextView_Style_Content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10"
+        android:padding="@dimen/drawable_padding_15"
+        android:text="营养师推荐"
+        android:textColor="@color/color22"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

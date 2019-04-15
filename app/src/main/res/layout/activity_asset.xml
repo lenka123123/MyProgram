@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                />
+
+            <TextView
+                android:text=""
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/allIntegral"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:padding="@dimen/drawable_padding_15">
+
+            <TextView
+                android:id="@+id/action_asset_transaction"
+                style="@style/TextView_Style_Content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/drawable_padding_6"
+                android:drawableTop="@drawable/ic_shiwujiaoyi"
+                android:text="交易大厅"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/action_asset_release"
+                style="@style/TextView_Style_Content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/drawable_padding_6"
+                android:drawableTop="@drawable/ic_myfabuimage"
+                android:text="我要发布"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/action_asset_transaction_record"
+                style="@style/TextView_Style_Content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/drawable_padding_6"
+                android:drawableTop="@drawable/ic_lookdingdan"
+                android:text="交易记录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/speaker"
+                style="@style/TextView_Style_Three"
+                android:drawableLeft="@drawable/ic_messagenotice"
+                android:drawableStart="@drawable/ic_messagenotice"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_centerVertical="true" />
+
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/marqueeView"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/speaker"
+                android:layout_toEndOf="@+id/speaker"
+                app:mvDirection="bottom_to_top"
+                app:mvInterval="3000"
+                app:mvTextColor="@color/color77"
+                app:mvTextSize="@dimen/text_size_style_two"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/ic_zichanzhihuan"
+                android:id="@+id/action_asset_permute"
+                style="@style/TextView_Style_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_below="@+id/action_asset_permute"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

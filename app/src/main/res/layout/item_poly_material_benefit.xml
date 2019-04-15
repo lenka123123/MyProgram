@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/goods_picture"
+        android:layout_width="@dimen/image_size_width"
+        android:layout_height="@dimen/image_size_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_placeholder" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        style="@style/TextView_Style_Content"
+        android:textColor="@color/color22"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_alignTop="@+id/goods_picture"
+        android:layout_toRightOf="@+id/goods_picture"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:text="小米" />
+
+    <TextView
+        android:id="@+id/enter_for_nums"
+        style="@style/TextView_Style_Content"
+        android:drawableLeft="@drawable/ic_lxr"
+        android:drawablePadding="@dimen/drawable_padding_5"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/goods_picture"
+        android:text="已报名329人" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_toRightOf="@+id/goods_picture"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView_Style_RMB"
+            android:text="@string/tysl_rmb"
+            android:textColor="@color/colorShopping" />
+
+        <TextView
+            android:id="@+id/price_3"
+            style="@style/TextView_Style_Number"
+            android:text="30.00"
+            android:textColor="@color/colorShopping" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deadline"
+        style="@style/TextView_Style_Content"
+        android:drawableLeft="@drawable/ic_time"
+        android:drawablePadding="@dimen/drawable_padding_5"
+        android:text="剩余报名10天"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/enter_for_nums"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/action_sign_up"
+        style="@style/TextView_Style_Action"
+        android:text="立即报名"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

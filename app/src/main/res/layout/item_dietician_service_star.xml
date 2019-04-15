@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default"
+    android:padding="@dimen/drawable_padding_6"
+    android:layout_width="wrap_content">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/head_logo"
+        android:layout_width="@dimen/image_size_style_default"
+        android:layout_height="@dimen/image_size_style_default"
+        android:layout_centerHorizontal="true"
+        app:riv_border_color="@android:color/transparent"
+        app:riv_border_width="@dimen/image_view_border_width"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/true_name"
+        style="@style/TextView_Style_Content"
+        android:layout_below="@+id/head_logo"
+        android:textColor="@color/color22"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/job_type"
+        style="@style/TextView_Style_Three"
+        android:layout_below="@+id/true_name"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_below="@+id/job_type"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_chatoters"/>
+</RelativeLayout>

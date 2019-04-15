@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/RelativeLayout_Default"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/head_logo"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/truename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陈露"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/jobType"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/truename"
+                android:text="中医营养师"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/personal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="服务价格："
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/order_amount"
+                android:layout_toRightOf="@+id/personal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥12311"/>
+
+
+             <TextView
+                 android:id="@+id/personal_count"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="服务人数:"/>
+    <TextView
+        android:id="@+id/personal_countall"
+        android:layout_marginLeft="5dp"
+    android:layout_toRightOf="@+id/personal_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="12"/>
+            <TextView
+                android:id="@+id/personal_pinjian"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/personal_countall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="好评率："/>
+
+            <TextView
+                   android:id="@+id/haoping"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/personal_pinjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="88"/>
+            <TextView
+                android:background="@drawable/selector_bg_ac1"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+关注"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        style="@style/RelativeLayout_Default"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center">
+          <ImageView
+              android:layout_width="22dp"
+              android:layout_height="22dp"
+              android:src="@drawable/ic_shouji"/>
+          <TextView
+              android:id="@+id/zhuanshu_shouji"
+              android:textColor="#666666"
+              android:layout_marginLeft="9dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="12344431"/>
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_weixin"/>
+            <TextView
+                android:id="@+id/zhuanshu_weixin"
+                android:textColor="#666666"
+                android:layout_marginLeft="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12344431"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/RelativeLayout_Default"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="个人简介"/>
+   <View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"></View>
+        <TextView
+            android:id="@+id/zhuanshu_text"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ff7608"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多久啊看出啦就回来的的能力KDL拿到了"
+            android:background="@drawable/ic_personalbg"/>
+          <TextView
+              android:id="@+id/zhuanshu_linyu"
+              android:layout_marginLeft="8dp"
+              android:layout_gravity="center"
+              android:layout_marginTop="14dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="电话说了很多了的你拉黑的啦还"/>
+         </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/action_evaluate_number"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/service_evaluate"
+                    style="@style/TextView_Style_Title"
+                    android:layout_centerVertical="true"
+                    android:text="服务评价(0)" />
+
+                <TextView style="@style/TextView_Style_More" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBackground" />
+
+            <TextView
+                android:id="@+id/empty_evaluate"
+                style="@style/TextView_Style_Content"
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/drawable_padding_15"
+                android:text="暂无评价！"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/recycler_view_evaluate_number"
+                style="@style/RecyclerView" />
+
+            <RelativeLayout
+                android:id="@+id/action_nutrition_station"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="@dimen/margin_10">
+                <TextView
+                    style="@style/TextView_Style_Title"
+                    android:text="@string/tysl_nutrition_station" />
+
+                <TextView
+                    android:id="@+id/nutrition_station_num"
+                    style="@style/TextView_Style_More"
+                    android:text="共0款" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBackground" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_nutrition_station"
+                style="@style/RecyclerView"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal" />
+
+
+
+      <!--   <include layout="@layout/activity_center_personal_service"></include>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/action_consult"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="立即咨询"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>

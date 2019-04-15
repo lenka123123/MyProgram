@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:showDividers="beginning|middle"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/widget_simple_tool_bar" />
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TextView_RelativeLayout"
+            android:layout_width="80dp"
+            android:gravity="start"
+            android:text="收货人" />
+
+        <EditText
+            android:id="@+id/et_contacts"
+            style="@style/EditText_RelativeLayout_Default"
+            android:layout_marginLeft="@dimen/activity_margin_left_default"
+            android:layout_marginStart="@dimen/margin_6"
+            android:layout_toEndOf="@+id/tv1"
+            android:layout_toRightOf="@+id/tv1"
+            android:background="@null"
+
+            android:textColorHint="@color/colorEditTextHint" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/TextView_RelativeLayout"
+            android:layout_width="80dp"
+            android:gravity="start"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            style="@style/EditText_RelativeLayout_Default"
+            android:layout_marginLeft="@dimen/activity_margin_left_default"
+            android:layout_marginStart="@dimen/activity_margin_left_default"
+            android:layout_toEndOf="@+id/tv2"
+            android:layout_toRightOf="@+id/tv2"
+            android:background="@null"
+
+            android:textColorHint="@color/colorEditTextHint" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_selector_area"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:text="所在地区" />
+
+        <TextView
+            android:id="@+id/area"
+            style="@style/TextView_Style_Content"
+            android:layout_marginEnd="@dimen/margin_6"
+            android:layout_marginRight="@dimen/margin_6"
+            android:layout_toLeftOf="@+id/image"
+            android:layout_toStartOf="@+id/image"
+            android:text="请选择"
+            android:textColor="@color/colorEditTextHint" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:contentDescription="@string/app_name"
+            style="@style/ImageView_Go_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="81dp"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/TextView_RelativeLayout"
+            android:layout_width="80dp"
+            android:gravity="start"
+            android:text="详细地址" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:id="@+id/et_address"
+            style="@style/EditText_RelativeLayout_Default"
+            android:layout_marginLeft="@dimen/activity_margin_left_default"
+            android:layout_marginStart="@dimen/activity_margin_left_default"
+            android:layout_toEndOf="@+id/tv3"
+            android:layout_toRightOf="@+id/tv3"
+            android:background="@null"
+            android:textScaleX="1.2"
+            android:hint="请填写详细地,址撒开,绿圾的纪录时刻记得啦"
+            android:lines="2"
+             android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColorHint="@color/colorEditTextHint" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_RelativeLayout"
+            android:layout_width="85dp"
+            android:gravity="start"
+            android:text="设置默认地址" />
+         <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/action_submit"
+        style="@style/TextView_Style_Submit"
+        android:text="保存" />
+</LinearLayout>

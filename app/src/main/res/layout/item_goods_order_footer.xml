@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    style="@style/RelativeLayout_Default">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="false"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/zhihui_total_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:textSize="12sp"
+            android:text="" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:text="合计" />
+
+        <TextView
+            android:id="@+id/order_amount"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:text="(含运费)" />
+
+      <!--  <TextView
+            android:id="@+id/shipping_fee"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:text=")" />-->
+    </LinearLayout>
+<View
+    android:id="@+id/ll2"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_below="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#eee"></View>
+    <LinearLayout
+        android:layout_below="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+        <TextView
+            android:id="@+id/action_order_detail"
+            style="@style/TextView_RelativeLayout"
+            android:background="@drawable/drawable_btn_bg_color_ac"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="订单详情"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorAC"
+            />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/action_cancel_order"
+            style="@style/TextView_RelativeLayout"
+            android:background="@drawable/drawable_btn_bg_color_ac"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="取消订单"
+            android:textColor="@color/colorAC"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/action_immediate_payment"
+            style="@style/TextView_RelativeLayout"
+            android:layout_below="@+id/ll2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/action_cancel_order"
+            android:text="立即支付"
+            android:background="@drawable/drawable_btn_bg_color_white"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/action_send_goods"
+            style="@style/TextView_RelativeLayout"
+            android:layout_below="@+id/ll2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/action_cancel_order"
+            android:text="提醒发货"
+            android:background="@drawable/drawable_btn_bg_color_white"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/action_evaluate"
+            style="@style/TextView_Style_Action_Primary"
+            android:layout_marginTop="10dp"
+            android:text="立即评价"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/action_confirm_receipt"
+            style="@style/TextView_Style_Action_Primary"
+            android:layout_below="@+id/ll"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/action_cancel_order"
+            android:text="确认收货"
+            android:visibility="gone" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

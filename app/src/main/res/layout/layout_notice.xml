@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDriver" />
+
+    <RelativeLayout
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/speaker"
+             android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/ic_home_notice"
+            android:drawableStart="@drawable/ic_home_notice"
+            android:layout_height="22dp"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_centerVertical="true" />
+
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/speaker"
+            android:layout_toEndOf="@+id/speaker"
+            app:mvTextColor="@color/color77"
+            app:mvTextSize="@dimen/text_size_style_two"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp">
+        <ImageView
+            android:id="@+id/my_pj_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_weixin"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/my_pg_money"
+            android:layout_toRightOf="@+id/my_pj_img"
+            android:textSize="17sp"
+            android:textColor="#333"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风一样的女子"/>
+  <TextView
+      android:layout_toRightOf="@+id/my_pj_img"
+      android:layout_below="@+id/my_pg_money"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="余额：1233"/>
+      <TextView
+          android:id="@+id/my_pj_btn"
+          android:textColor="@color/white"
+          android:layout_marginRight="15dp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/drawable_btn_bg_color_refreshprimary2"
+          android:text="写评价"/>
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>

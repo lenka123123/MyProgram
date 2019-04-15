@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LinearLayout_Divider">
+
+    <include layout="@layout/widget_simple_tool_bar" />
+
+    <include layout="@layout/layout_swipe_refresh" />
+</LinearLayout>

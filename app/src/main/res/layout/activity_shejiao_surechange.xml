@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/action_edit_nopersonal"
+   android:background="@drawable/item_bg_normal">
+    <TextView
+        android:id="@+id/sure_choose_place"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择您的收货地址"
+        android:textColor="@color/white"
+        android:background="@drawable/drawable_btn_bg_color_primary"/>
+   <ImageView
+          android:layout_centerVertical="true"
+       android:layout_marginRight="10dp"
+       android:layout_alignParentRight="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_go"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/action_edit_personal"
+        android:background="@drawable/item_bg_normal">
+
+        <TextView
+            android:id="@+id/sure_place"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:text="收货地址" />
+        <TextView
+            android:id="@+id/sure_name"
+            android:textColor="#333333"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/sure_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张飞"/>
+        <TextView
+               android:id="@+id/sure_number"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sure_name"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="8dp"
+            android:text="1232131312312"/>
+
+        <ImageView
+            android:id="@+id/sure_loacal_place"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/sure_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sure_place"/>
+
+         <TextView
+             android:id="@+id/sure_place_name"
+             android:textColor="#999999"
+             android:layout_marginLeft="8dp"
+             android:layout_below="@+id/sure_place"
+             android:layout_marginTop="8dp"
+             android:layout_toRightOf="@+id/sure_loacal_place"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:text="江苏省叫啥来好事啦"/>
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/item_bg_normal"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_marginTop="15dp">
+<ImageView
+    android:id="@+id/sure_goods_img"
+    android:scaleType="fitXY"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:layout_width="83dp"
+    android:layout_height="83dp"
+    android:src="@mipmap/ic_launcher"/>
+<TextView
+    android:id="@+id/sure_goods_name"
+    android:textSize="14sp"
+    android:textColor="#333333"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="24dp"
+    android:layout_toRightOf="@+id/sure_goods_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="多久哦是电话就打"/>
+<TextView
+    android:textColor="#666666"
+    android:layout_marginTop="35dp"
+    android:layout_marginLeft="24dp"
+    android:layout_toRightOf="@+id/sure_goods_img"
+    android:layout_below="@+id/sure_goods_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="数量：X1"/>
+
+<TextView
+    android:id="@+id/zhihuan_price"
+    android:textColor="#ff7608"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="25dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="122.33"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd5"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="买家留言"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/majia_msg"
+            android:hint="请输入您的留言"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd5"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/item_bg_normal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<TextView
+    android:textColor="#333333"
+    android:textSize="14sp"
+    android:layout_marginLeft="15dp"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="资产包："/>
+<TextView
+    android:id="@+id/zhihuan_zichan"
+    android:textColor="@color/colorPrimary"
+   android:layout_marginRight="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="12333"/>
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+ android:background="@drawable/item_bg_normal"></View>
+
+    <LinearLayout
+        android:background="@drawable/item_bg_normal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="运费："/>
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/item_bg_normal"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="实支付："/>
+        <TextView
+            android:id="@+id/zhihuan_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1222"
+            android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资产"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sure_change_btn"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="确认置换"/>
+
+    </LinearLayout>
+</RelativeLayout>

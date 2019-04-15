@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/drawable_padding_15"
+    android:paddingRight="@dimen/drawable_padding_15">
+
+    <ImageView
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/loginloge" />
+
+    <LinearLayout
+        style="@style/LinearLayout_Divider"
+        android:layout_marginTop="29dp"
+        android:showDividers="middle|end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_normal"
+            android:gravity="center_vertical">
+
+          <!--  style="@style/EditText_Default_Mobile"-->
+            <com.wokun.tysl.login.ClearEditText
+                android:id="@+id/et_mobile"
+                style="@style/EditText_Default_Mobile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+            
+        <!--    <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                 android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/login_delete"/>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg_normal"
+            android:gravity="center_vertical">
+          <!--  <ImageView
+                android:layout_toLeftOf="@+id/action_siv_show_pwd"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/login_delete"/>-->
+            <com.shantoo.widget.imageview.SelectorImageView
+                android:id="@+id/action_siv_show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:src="@drawable/login_biyan"
+                app:rx_selected_src="@drawable/login_zhenyan" />
+
+            <com.wokun.tysl.login.ClearEditText
+                android:id="@+id/et_password"
+                android:layout_marginRight="40dp"
+                style="@style/EditText_Default_Password"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/action_login"
+        style="@style/TextView_Style_Submit"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:text="@string/tysl_login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+
+            android:id="@+id/action_register"
+            style="@style/TextView_Style_Title"
+            android:layout_centerVertical="true"
+            android:gravity="start"
+            android:text="@string/tysl_register"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/action_alert_pwd"
+
+            style="@style/TextView_Style_Title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+
+            android:text="@string/tysl_alter_password"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</LinearLayout>

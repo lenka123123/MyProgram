@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+>
+    <TextView
+
+        android:id="@+id/zhihui_dinbannum"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/zhihui_dindan_time"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:textColor="#666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+       />
+
+    <TextView
+        android:id="@+id/zhihui_dindan_time1"
+        android:layout_marginLeft="8dp"
+          android:layout_width="66dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="11sp"
+      android:layout_alignParentRight="true"
+        android:text="确认自提"
+        android:background="@drawable/drawable_btn_bg_color_white"
+        android:textColor="@color/colorPrimary"
+       android:visibility="gone"
+       />
+
+
+    <TextView
+        android:id="@+id/zhihui_dindan_time2"
+        android:layout_marginLeft="8dp"
+        android:layout_width="66dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:layout_alignParentRight="true"
+        android:text="已自提"
+        android:background="@drawable/drawable_btn_bg_color_ac"
+      android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/zhihui_dindan_genjin"
+        android:layout_marginLeft="8dp"
+        android:layout_width="66dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:layout_alignParentRight="true"
+        android:text="立即跟进"
+        android:background="@drawable/drawable_btn_bg_color_white"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/zhihui_dindan_genjin2"
+        android:layout_marginLeft="8dp"
+        android:layout_width="66dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:layout_alignParentRight="true"
+        android:text="完成"
+        android:background="@drawable/drawable_btn_bg_color_ac"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

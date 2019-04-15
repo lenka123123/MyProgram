@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<TextView
+    android:id="@+id/zhihui_kc_title"
+    android:textSize="12sp"
+    android:background="#fff8ea"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="#ff7608"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="当库存数量不得高于库存上线数量，如须调整，请联系平台"/>
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@+id/zhihui_kc_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclerView"
+    android:background="@drawable/item_bg_normal">
+
+</android.support.v7.widget.RecyclerView>
+<TextView
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:text="批量进货"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

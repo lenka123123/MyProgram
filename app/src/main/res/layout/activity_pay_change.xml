@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="16dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:text="请您输入6位数的支付密码"/>
+
+    <LinearLayout
+        android:id="@+id/pop_zhihui_text"
+        android:layout_below="@+id/pop_zhihui_shanchu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.wokun.tysl.utils.EditInputView
+            android:id="@+id/edit1"
+            android:digits="1234567890"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            ver:box="6"
+            ver:box_bg_normal="@drawable/edit_bg_normal"
+            ver:box_bg_focus="@drawable/edit_bg_focus"
+            ver:child_h_padding="5dp"
+            android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+</LinearLayout>

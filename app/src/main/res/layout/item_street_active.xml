@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_placeholder"
+        style="@style/ImageView_Style_Default" />
+
+    <ImageView
+        android:id="@+id/state"
+        android:layout_height="@dimen/icon_size_35"
+        android:layout_width="@dimen/icon_size_35"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/poster" />
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_toRightOf="@+id/state"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/time"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_below="@+id/theme"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

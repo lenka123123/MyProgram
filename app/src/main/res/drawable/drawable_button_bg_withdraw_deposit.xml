@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/colorD2" android:state_selected="true"/>
+    <solid android:color="@color/colorD2" android:state_checked="true"/>
+    <solid android:color="@color/colorShopping"/>
+    <corners android:radius="@dimen/radius_size" />
+</shape>

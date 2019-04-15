@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:background="@color/colorWhite"
+    android:showDividers="beginning|middle">
+
+    <include layout="@layout/widget_simple_tool_bar" />
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextView_Style_Title"
+            android:text="@string/tysl_name" />
+
+        <EditText
+            android:id="@+id/alipay_name"
+            style="@style/EditText_Earnings"
+            android:layout_toRightOf="@+id/name"
+            android:hint="@string/tysl_account_name_hint" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+
+        <TextView
+            android:id="@+id/account"
+            style="@style/TextView_Style_Title"
+            android:text="@string/tysl_alipay_account" />
+
+        <EditText
+            android:id="@+id/alipay_id"
+            style="@style/EditText_Earnings"
+            android:layout_toRightOf="@+id/account"
+            android:hint="@string/tysl_alipay_account_hint" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/action_immediately_add"
+        style="@style/TextView_Style_Submit"
+        android:background="@drawable/drawable_button_bg_withdraw_deposit"
+        android:text="@string/tysl_immediately_add" />
+</LinearLayout>

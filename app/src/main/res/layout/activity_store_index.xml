@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multipleStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loadingView="@layout/layout_loading_view"
+        app:emptyView="@layout/layout_no_data_view"
+        app:errorView="@layout/layout_not_network"
+        app:noNetworkView="@layout/layout_not_network">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/colorBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_store_bg"
+                    android:padding="@dimen/activity_padding_left">
+
+                    <ImageView
+                        android:id="@+id/store_logo"
+                        android:layout_width="@dimen/image_size_style_default"
+                        android:layout_height="@dimen/image_size_style_default"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:id="@+id/store_name"
+                        style="@style/TextView_Style_Content"
+                        android:text="store_name"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_toRightOf="@+id/store_logo" />
+                    <!--
+                                    <com.wokun.tysl.widget.imageview.SelectorImageView
+                                        android:id="@+id/fav_state"
+                                        style="@style/ImageView_RelativeLayout"
+                                        android:layout_alignParentRight="true"
+                                        android:background="@drawable/ic_store_index_fav" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/action_polygon_collect"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.shantoo.widget.imageview.SelectorImageView
+                            android:id="@+id/siv_polygon_collect"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_store_index_fav"
+                            app:rx_selected_src="@drawable/ic_store_index_has_fav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                  &lt;!&ndash;  <Button
+                        android:text="综合排序"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/ic_store_index_down"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:text="分类查找"
+                        android:background="@color/colorWhite"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:drawableRight="@drawable/drawable_store_index_bg"
+                        android:layout_height="match_parent" />&ndash;&gt;
+                    <RelativeLayout
+                        android:id="@+id/actionSortByZ"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sort_by_z"
+                            style="@style/TextView_Style_Title"
+                            android:background="@color/colorWhite"
+                            android:text="综合排序"
+                            android:textColor="@color/tv_sort_bg"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/drawable_store_index_bg"
+                            android:drawablePadding="4dp"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/actionSortByC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sort_by_c"
+                            style="@style/TextView_Style_Title"
+                            android:background="@color/colorWhite"
+                            android:text="分类查找"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_14"
+                            android:textColor="@color/tv_sort_bg"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/drawable_store_index_bg"
+                            android:drawablePadding="4dp"
+                            android:layout_centerHorizontal="true" />
+
+                       &lt;!&ndash; <ImageView
+                            android:id="@+id/iv_sort_by_c"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/tv_sort_by_c"
+                            android:background="@drawable/drawable_store_index_bg" />&ndash;&gt;
+                    </RelativeLayout>
+                </LinearLayout>-->
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_height="44dp">
+
+                    <RelativeLayout
+                        android:id="@+id/action_sort_by_z"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sort_by_z"
+                            android:text="综合排序"
+                            style="@style/TextView_Style_Content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_sort_by_z"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.shantoo.widget.imageview.SelectorImageView
+                                android:id="@+id/siv_sort_by_z"
+                                android:src="@drawable/ic_unselect_down"
+                                app:rx_selected_src="@drawable/ic_select_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/action_sort_by_c"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sort_by_c"
+                            android:text="分类查找"
+                            style="@style/TextView_Style_Content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_sort_by_c"
+                            android:layout_width="wrap_content">
+
+                            <com.shantoo.widget.imageview.SelectorImageView
+                                android:id="@+id/siv_sort_by_c"
+                                android:src="@drawable/ic_unselect_down"
+                                app:rx_selected_src="@drawable/ic_select_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RadioGroup>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    style="@style/RecyclerView" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>

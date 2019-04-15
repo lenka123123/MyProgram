@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#dfdfdd" />
+
+    <!-- 底部导航 -->
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#f9f9f9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:id="@+id/main_home"
+            style="@style/RelativeLayout_Main">
+                <RelativeLayout android:id="@+id/ll"
+                    style="@style/RelativeLayout_Main_Child">
+                    <ImageView android:id="@+id/tab_img_home"
+                        style="@style/ImageView_Style_Main_Tab" />
+                    <TextView android:id="@+id/tab_text_home"
+                        style="@style/TextView_Style_Main_Tab"
+                        android:layout_below="@id/tab_img_home"
+                        android:text="@string/tysl_home" />
+                </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:id="@+id/main_zb"
+            style="@style/RelativeLayout_Main">
+            <RelativeLayout style="@style/RelativeLayout_Main_Child">
+                <ImageView android:id="@+id/tab_img_zb"
+                    style="@style/ImageView_Style_Main_Tab" />
+                <TextView
+                    android:id="@+id/tab_text_zb"
+                    style="@style/TextView_Style_Main_Tab"
+                    android:layout_below="@id/tab_img_zb"
+                    android:text="@string/tysl_goods_category" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:id="@+id/main_shop_cart"
+            style="@style/RelativeLayout_Main">
+            <RelativeLayout style="@style/RelativeLayout_Main_Child">
+                <ImageView android:id="@+id/tab_img_shop_cart"
+                    style="@style/ImageView_Style_Main_Tab" />
+                <TextView
+                    android:id="@+id/tab_text_shop_cart"
+                    style="@style/TextView_Style_Main_Tab"
+                    android:layout_below="@id/tab_img_shop_cart"
+                    android:text="@string/tysl_shop_cart" />
+                <TextView
+                    android:id="@+id/tv_shop_cart_point"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/tab_img_shop_cart"
+                    android:background="@drawable/drawable_btn_bg_color_red" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:id="@+id/main_ucenter"
+            style="@style/RelativeLayout_Main">
+                <RelativeLayout style="@style/RelativeLayout_Main_Child">
+                    <ImageView android:id="@+id/tab_img_ucenter"
+                        style="@style/ImageView_Style_Main_Tab" />
+                    <TextView
+                        android:id="@+id/tab_text_ucenter"
+                        style="@style/TextView_Style_Main_Tab"
+                        android:layout_below="@id/tab_img_ucenter"
+                        android:text="@string/tysl_ucenter" />
+                </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

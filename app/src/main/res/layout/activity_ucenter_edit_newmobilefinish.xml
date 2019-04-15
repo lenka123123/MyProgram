@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--修改的状态-->
+    <include layout="@layout/layout_ucenter_part_bind_progress" />
+
+     <View
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+         style="@style/LinearLayout_Divider"
+       ></View>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<ImageView
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_success"/>
+    <TextView
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tysl_get_codemessagesuccesful"
+          android:textStyle="bold"/>
+</LinearLayout>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/action_submit"
+        style="@style/TextView_Style_Submit_Login"
+        android:text="完成" />
+    </LinearLayout>
+
+
+
+
+
+
+

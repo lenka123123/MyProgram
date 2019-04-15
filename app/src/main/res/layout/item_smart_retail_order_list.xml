@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/margin_10"
+    style="@style/RelativeLayout_Default">
+
+    <TextView
+        android:text="太宜食聊"
+        android:id="@+id/tv_time"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:text="太宜食聊"
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="@dimen/margin_default"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_below="@+id/tv_name"
+        android:text="地址地址地址地址地址"
+        android:layout_marginTop="@dimen/margin_default"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:text="已发货"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:id="@+id/action_check_the_logistics"
+        style="@style/TextView_Style_Action_Primary"
+        android:layout_alignBottom="@+id/tv_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="确认收货" />
+</RelativeLayout>

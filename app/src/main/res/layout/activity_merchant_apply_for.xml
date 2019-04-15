@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:layout_height="match_parent"
+    android:showDividers="beginning|middle">
+
+    <include layout="@layout/widget_simple_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_default"
+        android:orientation="vertical"
+        style="@style/LinearLayout_Divider"
+        android:showDividers="beginning|middle"
+        android:layout_width="match_parent">
+
+        <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/tv1"
+            android:text="联系人姓名"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color22"
+            style="@style/TextView_Style_Content" />
+        <EditText
+            android:id="@+id/et_contacts"
+            android:hint="请填写联系人姓名"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_marginLeft="@dimen/margin_default"
+            style="@style/EditText_Earnings"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/tv2"
+            android:text="联系人电话"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color22"
+            style="@style/TextView_Style_Content" />
+        <EditText
+            android:id="@+id/et_mobile"
+            android:hint="请填写联系人电话"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_marginLeft="@dimen/margin_default"
+            style="@style/EditText_Earnings"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/tv3"
+            android:text="联系人邮箱"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color22"
+            style="@style/TextView_Style_Content" />
+        <EditText
+            android:id="@+id/et_address"
+            android:hint="请填写联系人邮箱"
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_marginLeft="@dimen/margin_default"
+            style="@style/EditText_Earnings"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/action_submit"
+        android:text="确定提交"
+        style="@style/TextView_Style_Submit" />
+
+    <TextView
+        android:text="我们会在7-15个工作日内与您联系"
+        android:textColor="@color/color22"
+        android:layout_marginLeft="@dimen/margin_default"
+        style="@style/TextView_Style_Content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="咨询电话:"
+            android:textColor="@color/color22"
+            android:layout_marginLeft="@dimen/margin_default"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/action_service"
+            android:text="4000456456"
+            android:textColor="#0d88fb"
+            android:layout_marginLeft="@dimen/margin_default"
+            style="@style/TextView_Style_Content" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_success"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="@dimen/margin_default"
+            android:src="@drawable/ic_merchant_apply_for_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="提交成功"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_default"
+            style="@style/TextView_Style_Content"
+            android:text="您已成功填写入驻意向表,我们将在7-15个工作日内与您联系" />
+    </LinearLayout>
+</LinearLayout>

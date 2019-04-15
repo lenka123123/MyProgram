@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/drawable_padding_3"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <Button
+        android:id="@+id/action_btn"
+        android:layout_centerInParent="true"
+        style="@style/Button_Style_Nutrition_Recipe"
+        android:layout_centerVertical="true"
+        android:text="@string/tysl_nutrition_recipe" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_Default">
+
+    <ImageView
+        android:id="@+id/article_image"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_placeholder"
+        android:layout_width="@dimen/image_size_width"
+        android:layout_height="@dimen/image_size_height"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextView_Style_Title"
+        android:layout_alignTop="@+id/article_image"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/article_image"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/truename"
+        style="@style/TextView_Style_Three"
+        android:layout_alignBottom="@+id/article_image"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_toRightOf="@+id/article_image"
+        android:textColor="@color/color77" />
+
+    <TextView
+        android:id="@+id/click_num"
+        style="@style/TextView_Style_Content"
+        android:layout_alignBottom="@+id/article_image"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color77" />
+
+    <TextView
+        style="@style/TextView_Style_Three"
+        android:layout_alignBottom="@+id/article_image"
+        android:layout_toLeftOf="@+id/click_num"
+        android:layout_marginRight="@dimen/margin_default"
+        android:textColor="@color/color77" />
+</RelativeLayout>

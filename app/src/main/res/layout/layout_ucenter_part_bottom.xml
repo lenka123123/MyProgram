@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+  android:visibility="gone"
+    android:id="@+id/action_preview_home_page2"
+    android:layout_marginTop="@dimen/margin_10">
+
+    <RelativeLayout
+        android:id="@+id/action_preview_home_page"
+        style="@style/RelativeLayout_Default"
+
+        >
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/yys_person"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="@string/tysl_user_preview_your_home_page" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_earnings"
+        style="@style/RelativeLayout_Default"
+      >
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/yys_shouyi"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="@string/tysl_user_my_earnings" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/yys_my_shoucang"
+        style="@style/RelativeLayout_Default"
+      >
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/yys_shoucang"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="我的收藏" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/action_recommend_goods"
+        style="@style/RelativeLayout_Default"
+       >
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/yys_tuijian"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="@string/tysl_user_recommend_goods" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+
+
+   <RelativeLayout
+
+        android:id="@+id/action_ship_address"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/yys_shouhuo_place"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="收货地址" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+         android:id="@+id/action_settings"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/ic_ucenter_setting"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="@string/tysl_user_setting" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/action_call_service"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+
+            style="@style/TextView_Style_Title"
+            android:drawableLeft="@drawable/yys_kefu"
+            android:drawablePadding="@dimen/drawable_padding_15"
+            android:gravity="left"
+            android:text="联系客服" />
+
+        <ImageView style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+</LinearLayout>

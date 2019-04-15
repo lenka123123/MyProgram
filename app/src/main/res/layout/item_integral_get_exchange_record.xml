@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:showDividers="beginning|middle"
+    android:layout_marginTop="@dimen/margin_10">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/order_number"
+            style="@style/TextView_RelativeLayout" />
+
+        <TextView
+            android:id="@+id/state"
+            style="@style/TextView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <ImageView
+            android:id="@+id/goods_picture"
+            android:src="@drawable/ic_placeholder"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/image_size_width"
+            android:layout_height="@dimen/image_size_height" />
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:text="goods_name"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_toRightOf="@+id/goods_picture"
+            android:layout_toEndOf="@+id/goods_picture"
+            android:layout_alignTop="@+id/goods_picture"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@id/exchange_integral"
+            android:text="exchange_integral"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:textColor="@color/colorShopping"
+            android:layout_toRightOf="@+id/goods_picture"
+            android:layout_toEndOf="@+id/goods_picture"
+            android:layout_alignBottom="@+id/goods_picture"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/integral_gid"
+            android:text="integral_gid"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/goods_picture"
+            style="@style/TextView_Style_Content" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/conversion"
+            android:visibility="gone"
+            style="@style/TextView_RelativeLayout_Right"
+            android:text="再次兑换" />
+
+        <TextView
+            android:id="@+id/check_the_logistics"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/activity_margin_right"
+            android:layout_marginEnd="@dimen/activity_margin_right"
+            android:layout_toLeftOf="@+id/confirm_receipt"
+            android:layout_toStartOf="@+id/confirm_receipt"
+            style="@style/TextView_RelativeLayout"
+            android:text="查看物流" />
+
+        <TextView
+            android:id="@+id/confirm_receipt"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/activity_margin_right"
+            android:layout_marginEnd="@dimen/activity_margin_right"
+            android:layout_toLeftOf="@+id/conversion"
+            android:layout_toStartOf="@+id/conversion"
+            style="@style/TextView_RelativeLayout"
+            android:text="确认收货" />
+    </RelativeLayout>
+</LinearLayout>

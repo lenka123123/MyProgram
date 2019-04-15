@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/action_sort_synthesize"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sort_synthesize"
+                android:text="综合"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_sort_synthesize"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_sort_down_synthesize"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_sort_sales"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sort_sales"
+                android:text="销量"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_sort_sales"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_sort_down_sales"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_sort_newest"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sort_newest"
+                android:text="最新"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_sort_newest"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_sort_down_newest"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_sort_price"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sort_price"
+                style="@style/TextView_Style_Content"
+                android:layout_height="match_parent"
+                android:text="价格" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_sort_price"
+                android:layout_width="wrap_content">
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_sort_up_price"
+                    android:src="@drawable/ic_unselect_up"
+                    app:rx_selected_src="@drawable/ic_select_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.shantoo.widget.imageview.SelectorImageView
+                    android:id="@+id/drawable_btn_sort_down_price"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:src="@drawable/ic_unselect_down"
+                    app:rx_selected_src="@drawable/ic_select_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RadioGroup>
+
+    <include layout="@layout/layout_swipe_refresh"/>
+</LinearLayout>

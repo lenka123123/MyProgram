@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp">
+    <CheckBox
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:layout_gravity="center_vertical"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+<LinearLayout
+    android:background="@drawable/bank_bg"
+    android:layout_marginLeft="5dp"
+    android:layout_width="345dp"
+    android:layout_height="80dp">
+<ImageView
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/bank_ka"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/zhihui_it_call"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="招商银行"/>
+    <TextView
+        android:id="@+id/zhihui_it_title"
+        android:layout_below="@+id/zhihui_it_call"
+        android:textColor="@color/white"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尾号2571"/>
+
+   <TextView
+       android:id="@+id/zhihui_it_time"
+       android:layout_marginLeft="40dp"
+       android:layout_toRightOf="@+id/zhihui_it_title"
+       android:layout_marginTop="11dp"
+       android:layout_below="@+id/zhihui_it_call"
+    android:text="储蓄卡"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"/>
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
+</LinearLayout>

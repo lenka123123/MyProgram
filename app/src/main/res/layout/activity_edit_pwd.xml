@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+   <LinearLayout
+       android:gravity="center_vertical"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       style="@style/LinearLayout_Divider"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_marginLeft="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="短信验证码即将发送至"/>
+
+       <TextView
+           android:id="@+id/mobie_phone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""/>
+
+   </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_new_pwdtx"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="新密码"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <com.wokun.tysl.login.ClearEditText
+            android:id="@+id/et_old_pwd"
+            android:layout_marginRight="30dp"
+            style="@style/EditText_Default"
+
+            android:layout_toRightOf="@+id/et_new_pwdtx" />
+
+<!--      <ImageView
+
+          android:id="@+id/et_image_error"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@+id/et_image_error1"
+
+          android:layout_centerVertical="true"
+          android:src="@drawable/et_pwd_error"
+          />-->
+
+        <com.shantoo.widget.imageview.SelectorImageView
+            android:id="@+id/et_image_error1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:src="@drawable/login_biyan"
+            app:rx_selected_src="@drawable/login_zhenyan" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确认密码"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <com.wokun.tysl.login.ClearEditText
+            android:layout_marginRight="30dp"
+            android:id="@+id/et_new_pwd"
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd"
+           />
+
+       <!-- <ImageView
+
+            android:id="@+id/et_image_error4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/et_image_error3"
+
+            android:layout_centerVertical="true"
+            android:src="@drawable/et_pwd_error"
+            />-->
+
+      <!--  <ImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/et_image_error3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/et_pwd_biyan"
+            />-->
+
+        <com.shantoo.widget.imageview.SelectorImageView
+            android:id="@+id/et_image_error3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:src="@drawable/login_biyan"
+            app:rx_selected_src="@drawable/login_zhenyan" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_yanzhen"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="验证码"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <com.wokun.tysl.login.ClearEditText
+            android:layout_marginRight="90dp"
+             android:layout_toRightOf="@id/et_yanzhen"
+            android:id="@+id/et_re_new_pwd"
+            style="@style/EditText_Default"
+
+            />
+        <Button
+            android:id="@+id/action_send_gaisjcode"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:background="@drawable/drawable_button_verify_code"
+            android:text="@string/tysl_get_code"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_style_two" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/action_submit"
+        style="@style/TextView_Style_Submit" />
+</LinearLayout>

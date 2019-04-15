@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        style="@style/LinearLayout_Divider"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写营养师认证信息"/>
+     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd"
+            android:layout_width="65dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="选择类型"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:hint="请选择您认证的营养师类型"
+    style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd"
+
+            />
+ </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd1"
+            android:layout_width="65dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="真实姓名"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd1"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd2"
+            android:layout_width="65dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="性别"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd2"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd3"
+            android:layout_width="65dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="身份证号"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <EditText
+
+            style="@style/EditText_Default"
+            android:layout_toRightOf="@+id/et_sure_pwd3"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd4"
+            android:layout_width="100dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="上传真实头像"
+            android:textColor="@color/black"
+
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+          android:layout_centerInParent="true"
+            android:src="@drawable/sc_tupianshangchaun"
+            android:layout_toRightOf="@+id/et_sure_pwd4"
+              android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:background="@drawable/item_bg_normal"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15">
+        <TextView
+            android:id="@+id/et_sure_pwd5"
+            android:layout_width="100dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="上传资质证书"
+            android:textColor="@color/black"
+
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sc_tupianshangchaun"
+            android:layout_toRightOf="@+id/et_sure_pwd5"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="40dp"
+         android:text="提交"
+        style="@style/TextView_Style_Submit" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginStart="2.5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_selected" />
+
+        <TextView
+
+            style="@style/TextView_Style_Content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:text="同意" />
+
+        <TextView
+            android:id="@+id/action_tysl_xy"
+            style="@style/TextView_Style_Content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:text="《营养师服务协议》"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

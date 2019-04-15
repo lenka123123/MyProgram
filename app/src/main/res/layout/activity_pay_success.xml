@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+    <ImageView
+
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pay_right"/>
+   <TextView
+       android:layout_gravity="center"
+       android:layout_marginLeft="15dp"
+       android:textSize="16sp"
+       android:textColor="@color/white"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="您的订单付款成功"/>
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_normal"
+    >
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/pay_nameclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货人:"/>
+
+    <TextView
+        android:id="@+id/pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pay_zitiandian"
+        android:layout_toLeftOf="@+id/pay_place"
+        android:layout_toStartOf="@+id/pay_place"
+        android:text=""
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/pay_phone"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:id="@+id/pay_zitiandian"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/pay_nameclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自提点："/>
+    <TextView
+        android:id="@+id/pay_place"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pay_name"
+        android:layout_toRightOf="@+id/pay_zitiandian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="·"/>
+<TextView
+    android:id="@+id/pay_time"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/colorPrimary"
+    android:layout_below="@+id/pay_zitiandian"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="自提点时间："/>
+    <TextView
+        android:id="@+id/pay_time2"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/pay_place"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pay_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每天10：00-20：00"/>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pay_time"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+<TextView
+    android:id="@+id/pay_number"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="25dp"
+    android:layout_below="@+id/pay_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="订单号："/>
+    <TextView
+        android:id="@+id/pay_dingdanhao"
+        android:layout_below="@+id/pay_time2"
+        android:layout_toRightOf="@+id/pay_number"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12344322"/>
+    <TextView
+        android:id="@+id/pay_total"
+        android:layout_below="@+id/pay_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合计："/>
+    <TextView
+        android:id="@+id/pay_total1"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/pay_number"
+        android:layout_toRightOf="@+id/pay_total"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="399"/>
+</RelativeLayout>
+<LinearLayout
+    android:background="@drawable/item_bg_normal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+   >
+    <TextView
+        android:id="@+id/see_order"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_btn_bg_color_ac"
+       android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:text="查看订单"/>
+    <TextView
+        android:id="@+id/return_first"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_btn_bg_color_ac"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="35dp"
+        android:text="返回首页"/>
+
+</LinearLayout>
+<TextView
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="安全提醒"
+    android:textColor="@color/black"
+    android:background="@drawable/item_bg_normal"/>
+<TextView
+    android:lineSpacingExtra="4dp"
+   android:layout_marginLeft="10dp"
+    android:background="@drawable/item_bg_normal"
+    android:textColor="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="付款成功后，商家不会付款异常、卡单、系统升级为理由联系您。请勿泄漏银行卡号，手机验证码，否则会造成钱款损失。谨防电话诈骗！"></TextView>
+
+<LinearLayout
+    android:layout_marginTop="2dp"
+    style="@style/LinearLayout_Divider"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+ >
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+    android:layout_gravity="center"
+    android:layout_width="50dp"
+    android:layout_height="20dp"
+    android:src="@drawable/sc_round_left"/>
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sc_tuijian"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="为您推荐"
+        android:textColor="@color/colorPrimary"/>
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:src="@drawable/sc_right_round"/>
+</LinearLayout>
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

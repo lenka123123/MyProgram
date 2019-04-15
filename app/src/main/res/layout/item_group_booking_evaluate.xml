@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelativeLayout_Default">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/riv_head_image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_default_head_image"
+        android:layout_width="@dimen/rounded_image_view_width"
+        android:layout_height="@dimen/rounded_image_view_height"
+        app:riv_border_color="@android:color/transparent"
+        app:riv_border_width="@dimen/image_view_border_width"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:text="ID"
+        style="@style/TextView_RelativeLayout_Title"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_toRightOf="@+id/riv_head_image"
+        android:layout_toEndOf="@+id/riv_head_image" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:text="剩余22:10:00"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/TextView_RelativeLayout_Item_Content"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:text="最滿意的一件: 6666"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_below="@+id/riv_head_image"
+        style="@style/TextView_Style_Content" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:text="产品:2205"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_below="@+id/tv3"
+        style="@style/TextView_Style_Content" />
+</RelativeLayout>

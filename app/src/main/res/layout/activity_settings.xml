@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:divider="@drawable/separator"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle|end">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout style="@style/LinearLayout_Divider">
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/action_edit_personal"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="个人信息" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_edit_password"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="@string/tysl_edit_password" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_edit_mobile"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="绑定手机" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout_Divider">
+
+
+        <RelativeLayout
+            android:id="@+id/action_message_toast"
+            style="@style/RelativeLayout_Default">
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:text="@string/tysl_take_message" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:kswTintColor="@color/colorPrimary" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/call_kefu"
+        style="@style/LinearLayout_Divider"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_Style_Title"
+                android:textColor="#333"
+                android:text="客服中心" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout style="@style/LinearLayout_Divider"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_RelativeLayout"
+                android:text="去评分" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_about_us"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_RelativeLayout"
+                android:text="@string/tysl_about_us" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_feed_back"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_RelativeLayout"
+                android:text="@string/tysl_feedback" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayout_Divider"
+       >
+
+        <RelativeLayout
+            android:id="@+id/action_check_update"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                style="@style/TextView_RelativeLayout"
+                android:text="当前版本" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_clear_cache"
+            style="@style/RelativeLayout_Default"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/TextView_RelativeLayout"
+                android:text="@string/tysl_clear_cache" />
+
+            <TextView
+                android:id="@+id/clear"
+                style="@style/TextView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/action_logout"
+        style="@style/TextView_Settings"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="退出当前账号" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+
+    <RelativeLayout
+        android:id="@+id/action_alipay"
+        style="@style/RelativeLayout_Default">
+
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:textColor="@color/color22"
+            android:drawableLeft="@drawable/ic_alipay"
+            android:drawablePadding="@dimen/drawable_padding_13"
+
+            android:text="支付宝支付" />
+
+        <com.shantoo.widget.imageview.SelectorImageView
+            android:id="@+id/alipay_selector"
+            android:src="@drawable/ic_un_selected"
+            app:rx_checked="true"
+            app:rx_selected_src="@drawable/ic_selected"
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_wxpay"
+        style="@style/RelativeLayout_Default">
+        <TextView
+            style="@style/TextView_Style_Content"
+            android:textColor="@color/color22"
+            android:drawableLeft="@drawable/ic_wxpay"
+            android:drawablePadding="@dimen/drawable_padding_13"
+            android:text="微信支付" />
+
+        <com.shantoo.widget.imageview.SelectorImageView
+            android:id="@+id/weixing_selector"
+            android:src="@drawable/ic_un_selected"
+            app:rx_selected_src="@drawable/ic_selected"
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+</LinearLayout>

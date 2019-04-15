@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackground" />
+
+    <LinearLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#ff7608"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginTop="20dp"
+            style="@style/TextView_RelativeLayout"
+            android:text="账户余额(元)"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/TextView_RelativeLayout"
+            android:layout_marginTop="31dp"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_35" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayout_Divider"
+        android:layout_below="@id/part1"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/action_withdraw_deposit"
+            style="@style/RelativeLayout_Default"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/TextView_RelativeLayout_Item"
+                android:drawableLeft="@drawable/yys_zhanghu"
+                android:drawablePadding="@dimen/activity_padding_default"
+                android:text="@string/tysl_withdraw_deposit" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_earnings_detail"
+            style="@style/RelativeLayout_Default"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_RelativeLayout_Item"
+                android:drawableLeft="@drawable/ic_earnings_detail"
+                android:drawablePadding="@dimen/activity_padding_default"
+                android:text="@string/tysl_earnings_detail" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_withdraw_deposit_detail"
+            style="@style/RelativeLayout_Default"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/TextView_RelativeLayout_Item"
+                android:drawableLeft="@drawable/yys_tixianjilv"
+                android:drawablePadding="@dimen/activity_padding_default"
+                android:text="@string/tysl_withdraw_deposit_detail" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/action_withdraw_deposit_card_list"
+            style="@style/RelativeLayout_Default"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/TextView_RelativeLayout_Item"
+                android:drawableLeft="@drawable/yys_yinhangka"
+                android:drawablePadding="@dimen/activity_padding_default"
+                android:text="提现账号管理" />
+
+            <ImageView style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/action_benefits_that"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/activity_margin_bottom_20"
+        android:drawableLeft="@drawable/ic_benefits_that"
+        android:drawablePadding="@dimen/radius_size"
+        android:gravity="left"
+        android:text="@string/tysl_benefits_that"
+        android:textColor="@color/color77" />
+</RelativeLayout>

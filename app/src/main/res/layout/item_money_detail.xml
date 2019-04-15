@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/drawable_padding_15"
+    android:layout_height="wrap_content">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/type_image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/ic_placeholder"
+        android:layout_centerVertical="true"
+        app:riv_border_color="#d2d2d2"
+        app:riv_border_width="0.5dp"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        style="@style/TextView_Style_Title"
+        android:text="tv_type_name"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_toRightOf="@+id/type_image"
+        android:layout_toEndOf="@+id/type_image"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_create_time"
+        android:text="tv_create_time"
+        android:layout_below="@+id/tv_type_name"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_toRightOf="@+id/type_image"
+        android:layout_toEndOf="@+id/type_image"
+        android:layout_marginTop="@dimen/margin_default"
+        style="@style/TextView_Style_Title" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:text="money"
+        style="@style/TextView_Style_Title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default" />
+</RelativeLayout>

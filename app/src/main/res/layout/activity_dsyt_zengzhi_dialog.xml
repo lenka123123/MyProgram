@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dsyt_dialog_shenqin_bg">
+<TextView
+    android:layout_marginTop="34dp"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="请输入达事以太账号"/>
+    <EditText
+        android:id="@+id/edit_mymobile"
+        android:layout_gravity="center"
+        android:layout_marginTop="54dp"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:hint="注册达事以太APP的手机号码"/>
+    <TextView
+        android:id="@+id/txt_comit"
+        android:text="立即提交"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/drawable_btn_bg_color_primary3"
+        android:layout_width="220dp"
+        android:layout_height="45dp" />
+</LinearLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+<TextView
+    android:text="发现余额"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"/>
+    <TextView
+        android:text="做任务可以获取“达事DS”"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"/>
+
+     <ImageView
+         android:layout_marginBottom="7dp"
+         android:layout_marginTop="15dp"
+         android:layout_gravity="center"
+         android:scaleType="fitXY"
+         android:src="@drawable/dsyt_findmoney"
+       android:layout_width="120dp"
+       android:layout_height="120dp" />
+    </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout_Divider"
+                android:layout_marginTop="10dp">
+             <LinearLayout
+
+                 android:background="@color/white"
+                 android:gravity="center"
+                 android:layout_gravity="center"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:orientation="horizontal">
+                 <View
+                      android:layout_marginRight="15dp"
+                     android:layout_gravity="center"
+                     android:layout_width="18dp"
+                     android:layout_height="0.5dp"
+                     android:background="#333">
+
+                 </View>
+          <TextView
+              android:textSize="16sp"
+              android:textColor="#333"
+
+              android:layout_gravity="center"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:text="发现任务"></TextView>
+
+
+
+                 <View
+                  android:layout_marginLeft="15dp"
+                     android:layout_gravity="center"
+                     android:layout_width="18dp"
+                     android:layout_height="0.5dp"
+                     android:background="#333">
+
+                 </View>
+             </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/find_yaoqin"
+                    style="@style/RelativeLayout_Default">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/my_personmoeney_im"
+                        android:src="@drawable/yaoqinzhuce"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_toRightOf="@+id/my_personmoeney_im"
+                        style="@style/TextView_Style_Title"
+                        android:layout_centerVertical="true"
+                        android:text="邀请注册" />
+
+                    <TextView
+                        android:id="@+id/find_txt_yaoqin"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/yaoqong_zhuce"
+                        android:layout_width="60dp"
+                        android:textSize="16sp"
+                        android:background="@drawable/drawable_btn_bg_color_primary1"
+                        android:textColor="@color/white"
+                        android:text="+10"/>
+                    <ImageView
+                        android:id="@+id/yaoqong_zhuce"
+                        style="@style/ImageView_RelativeLayout_Right" />
+                </RelativeLayout>
+
+        <!--    <View
+                android:background="#eee"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"></View>
+-->
+
+
+                <RelativeLayout
+                    android:id="@+id/find_shop"
+                    style="@style/RelativeLayout_Default">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/zc_fabu_im"
+                        android:src="@drawable/shangchengouwu"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/zc_fabu"
+                        android:layout_toRightOf="@+id/zc_fabu_im"
+                        style="@style/TextView_Style_Title"
+                        android:layout_centerVertical="true"
+                        android:text="商城购物" />
+
+
+                    <TextView
+                        android:id="@+id/find_txt_shop"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/shangchen_gouwu"
+                        android:layout_width="60dp"
+                        android:background="@drawable/drawable_btn_bg_color_primary1"
+                        android:textColor="@color/white"
+                        android:text="+10"/>
+
+                    <ImageView
+                        android:id="@+id/shangchen_gouwu"
+                        style="@style/ImageView_RelativeLayout_Right" />
+                </RelativeLayout>
+             <!--   <View
+                    android:background="#eee"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"></View>-->
+                <RelativeLayout
+                    android:id="@+id/find_pinjia"
+                    style="@style/RelativeLayout_Default">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/zc_dating_im"
+                        android:src="@drawable/pinjia"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/zc_dating_im"
+                        style="@style/TextView_Style_Title"
+                        android:text="商品评价" />
+
+                    <TextView
+                        android:id="@+id/find_txt_pinjia"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/shangping_fuwu"
+                        android:layout_width="60dp"
+                        android:background="@drawable/drawable_btn_bg_color_primary1"
+                        android:textColor="@color/white"
+                        android:text="+10"/>
+
+
+                    <ImageView
+                          android:id="@+id/shangping_fuwu"
+                        style="@style/ImageView_RelativeLayout_Right" />
+                </RelativeLayout>
+        <!--        <View
+                    android:background="#eee"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"></View>-->
+                <RelativeLayout
+                    android:id="@+id/find_bugservice"
+                    style="@style/RelativeLayout_Default">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/zc_jiaoyi_im"
+                        android:src="@drawable/goumaifuwu"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/zc_jiaoyi_im"
+                        style="@style/TextView_Style_Title"
+                        android:text="购买服务" />
+
+                    <TextView
+                        android:id="@+id/find_txt_buyservice"
+                        android:textSize="16sp"                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/fuwu_goumai"
+                        android:layout_width="60dp"
+                        android:background="@drawable/drawable_btn_bg_color_primary1"
+                        android:textColor="@color/white"
+                        android:text="+10"/>
+
+                    <ImageView
+                        android:id="@+id/fuwu_goumai"
+                        style="@style/ImageView_RelativeLayout_Right" />
+
+                </RelativeLayout>
+             <!--   <View
+                    android:background="#eee"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"></View>-->
+                <RelativeLayout
+                    android:id="@+id/find_service_pinjia"
+                    style="@style/RelativeLayout_Default">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/zc_jiaoyijilu_im"
+                        android:src="@drawable/fuwupinjia"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/zc_jiaoyijilu_im"
+                        style="@style/TextView_Style_Title"
+                        android:text="服务评价" />
+
+                    <TextView
+                        android:id="@+id/find_txt_service_pinjia"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/fu_pinjia"
+                        android:layout_width="60dp"
+                        android:background="@drawable/drawable_btn_bg_color_primary1"
+                        android:textColor="@color/white"
+                        android:text="+10"/>
+
+                    <ImageView
+                        android:id="@+id/fu_pinjia"
+                        style="@style/ImageView_RelativeLayout_Right" />
+
+                </RelativeLayout>
+       <!--         <View
+                    android:background="#eee"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"></View>-->
+                <RelativeLayout
+                    android:id="@+id/find_share"
+                    style="@style/RelativeLayout_Default">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/zc_zhihuan_im"
+                        android:src="@drawable/fenxiang"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/zc_zhihuan_im"
+                        style="@style/TextView_Style_Title"
+                        android:text="分享" />
+
+                    <TextView
+                        android:id="@+id/find_txt_share"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/fenxiang"
+                        android:layout_width="60dp"
+                        android:background="@drawable/drawable_btn_bg_color_primary1"
+                        android:textColor="@color/white"
+                        android:text="+10"/>
+
+                    <ImageView
+                        android:id="@+id/fenxiang"
+                        style="@style/ImageView_RelativeLayout_Right" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

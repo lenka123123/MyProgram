@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:layout_marginTop="@dimen/margin_10">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="下单时间： 2018-05-06"/>
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="代发货"
+            android:textColor="@color/colorRed"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/goods_picture"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/image_size_width"
+            android:layout_height="@dimen/image_size_height"
+            android:layout_below="@+id/txtTime"/>
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:text="标题"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_toRightOf="@+id/goods_picture"
+            android:layout_toEndOf="@+id/goods_picture"
+            android:layout_alignTop="@+id/goods_picture"
+            style="@style/TextView_Style_Title" />
+
+        <TextView
+            android:id="@id/exchange_integral"
+            android:text="进货量： "
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:textColor="@color/color77"
+            android:layout_toRightOf="@+id/goods_picture"
+            android:layout_toEndOf="@+id/goods_picture"
+            android:layout_alignBottom="@+id/goods_picture"
+            style="@style/TextView_Style_Content" />
+        <TextView
+            android:id="@+id/exchange_integral2"
+            android:text="x5"
+            android:textColor="@color/colorShopping"
+            android:layout_toRightOf="@+id/exchange_integral"
+            android:layout_toEndOf="@+id/exchange_integral"
+            android:layout_alignBottom="@+id/goods_picture"
+            style="@style/TextView_Style_Content" />
+
+        <TextView
+            android:id="@+id/txtClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/exchange_integral2"
+            android:text="取消订单"/>
+    </RelativeLayout>
+</LinearLayout>

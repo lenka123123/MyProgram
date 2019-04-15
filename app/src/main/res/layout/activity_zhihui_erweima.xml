@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <LinearLayout
+       android:layout_gravity="center"
+        android:background="@drawable/item_bg_normal"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:lineSpacingExtra="4dp"
+            android:textSize="15sp"
+            android:padding="48dp"
+            android:textColor="#333"
+            android:text="将二维码分享给你的创客并请创客即使填写资料绑定店铺"/>
+
+   <ImageView
+       android:id="@+id/erweima"
+       android:layout_width="180dp"
+       android:layout_height="180dp"
+       android:layout_gravity="center"
+       android:src="@drawable/zhihui_zh_dindan"/>
+
+<TextView
+    android:id="@+id/store_place"
+    android:textSize="15sp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginTop="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="软件大厦养生馆"
+    android:textColor="#ff7608"/>
+
+    </LinearLayout>
+    
+<TextView
+    android:id="@+id/new_erweima"
+    android:text="生成新的二维码"
+    android:textColor="@color/colorPrimary"
+    android:background="@drawable/item_bg_normal"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginTop="35dp"
+    android:layout_width="350dp"
+    android:layout_height="55dp" />
+</LinearLayout>

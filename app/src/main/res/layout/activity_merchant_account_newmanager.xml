@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/zhihui_bg">
+
+        <com.itheima.roundedimageview.RoundedImageView
+            android:id="@+id/user_head_img"
+            android:layout_width="@dimen/image_size_style_header"
+            android:layout_height="@dimen/image_size_style_header"
+            android:layout_marginLeft="@dimen/activity_margin_bottom_15"
+            android:layout_marginStart="@dimen/activity_margin_bottom_15"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_default_head_image"
+            android:scaleType="fitCenter"
+            app:riv_border_color="@color/colorWhite"
+            app:riv_border_width="0dp"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/zhihui_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/user_head_img"
+            android:text="软件大厦养生馆"
+            android:textColor="#ccffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/store_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zhihui_shopname"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/user_head_img"
+            android:background="@drawable/drawable_btn_bg_color_refreshprimary_roundgray"
+            android:text="No:www"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/last_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_head_img"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="余额：￥"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/last_daijiesuanmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/last_money"
+            android:layout_below="@+id/user_head_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:text="待结算：￥"
+            android:gravity="right"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/zhihui_show_qutixian"
+        android:background="@drawable/drawable_btn_bg_color_refreshprimary_roundwhite"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去提现"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/item_bg_normal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+   <LinearLayout
+       android:layout_gravity="center"
+        android:gravity="center"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:textColor="#999999"
+           android:textSize="14sp"
+           android:layout_marginTop="12dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="今日营业额"/>
+       <TextView
+           android:id="@+id/today_turnover"
+           android:textColor="#333333"
+           android:layout_marginTop="8dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="￥"/>
+</LinearLayout>
+    <View
+        android:background="#eeeeee"
+        android:layout_gravity="center"
+        android:layout_width="1dp"
+        android:layout_height="50dp"></View>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日收益"/>
+            <TextView
+                android:id="@+id/today_Profit"
+                android:textColor="#333333"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fff4f6"
+        android:layout_width="match_parent"
+        android:layout_height="26dp">
+        <TextView
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:text="每月1号结算上月预估收入，本月预估收入在下月1号结算。"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zhihui_show_shop"
+        style="@style/RelativeLayout_Default">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zc_fabu_im3"
+            android:src="@drawable/zhihui_zh_shouye"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/zc_fabu_im3"
+            style="@style/TextView_Style_Title"
+            android:layout_centerVertical="true"
+            android:text="店铺主页" />
+        <ImageView
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/zhihui_show_huiyuan"
+        style="@style/RelativeLayout_Default">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zc_fabu_im4"
+            android:src="@drawable/zhihui_zh_huiyuan"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/zc_fabu_im4"
+            style="@style/TextView_Style_Title"
+            android:layout_centerVertical="true"
+            android:text="会员管理" />
+        <ImageView
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zhihui_show_dindan"
+        style="@style/RelativeLayout_Default">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zc_fabu_im5"
+            android:src="@drawable/zhihui_zh_dindan"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/zc_fabu_im5"
+            style="@style/TextView_Style_Title"
+            android:layout_centerVertical="true"
+            android:text="订单管理" />
+        <ImageView
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/zhihui_show_kucun"
+        style="@style/RelativeLayout_Default">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zc_fabu_im6"
+            android:src="@drawable/zhihui_zh_kucun"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/zc_fabu_im6"
+            style="@style/TextView_Style_Title"
+            android:layout_centerVertical="true"
+            android:text="库存管理" />
+        <ImageView
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zhihui_show_chuangke"
+        android:layout_marginTop="10dp"
+        style="@style/RelativeLayout_Default">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zc_fabu_im7"
+            android:src="@drawable/zhihui_zh_chuangke"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/zc_fabu_im7"
+            style="@style/TextView_Style_Title"
+            android:layout_centerVertical="true"
+            android:text="创客管理" />
+        <ImageView
+            style="@style/ImageView_RelativeLayout_Right" />
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhihui_show_erweima"
+                style="@style/RelativeLayout_Default">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zc_fabu_im8"
+                    android:src="@drawable/zhihui_zh_erweima"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/zc_fabu_im8"
+                    style="@style/TextView_Style_Title"
+                    android:layout_centerVertical="true"
+                    android:text="创客二维码" />
+                <ImageView
+                    style="@style/ImageView_RelativeLayout_Right" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/zhihui_show_yixiangkehu"
+                 style="@style/RelativeLayout_Default">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zc_fabu_im9"
+                android:src="@drawable/zhihui_zh_yixiang"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/zc_fabu_im9"
+                style="@style/TextView_Style_Title"
+                android:layout_centerVertical="true"
+                android:text="意向客户" />
+            <ImageView
+                style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>  <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/zhihui_show_tixian"
+            style="@style/RelativeLayout_Default">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zc_fabu_im11"
+                android:src="@drawable/zhihui_zh_tixian"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/zc_fabu_im11"
+                style="@style/TextView_Style_Title"
+                android:layout_centerVertical="true"
+                android:text="提现明细" />
+            <ImageView
+                style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/zhihui_show_addcard"
+            style="@style/RelativeLayout_Default">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zc_fabu_im12"
+                android:src="@drawable/zhihui_zh_yinhanka"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/zc_fabu_im12"
+                style="@style/TextView_Style_Title"
+                android:layout_centerVertical="true"
+                android:text="提现账号管理" />
+            <ImageView
+                style="@style/ImageView_RelativeLayout_Right" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                style="@style/RelativeLayout_Default">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zc_fabu_im13"
+                    android:src="@drawable/zhihui_zh_kefu"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/zc_fabu_im13"
+                    style="@style/TextView_Style_Title"
+                    android:layout_centerVertical="true"
+                    android:text="联系客服" />
+                <ImageView
+                    android:id="@+id/im_kefu"
+                    style="@style/ImageView_RelativeLayout_Right" />
+
+       <TextView
+           android:layout_marginRight="20dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="400-000-000"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

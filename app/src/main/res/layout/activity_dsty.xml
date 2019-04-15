@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yuzhou"
+    >
+    <ImageView
+        android:id="@+id/back_white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_white"/>
+    <TextView
+        android:id="@+id/dsyt_myfabu"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/back_white"
+        android:textColor="#ccffffff"
+        android:background="@drawable/drawable_dsyt_txtstyle"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/needfabu"
+        android:layout_height="wrap_content"
+         android:drawablePadding="6dp"
+        android:textSize="13sp"
+        android:text="我要发布"/>
+
+        <TextView
+            android:id="@+id/dsyt_change"
+            style="@style/Dsyt_Textstyle"
+            android:text="交易大厅"
+            android:layout_marginRight="13dp"
+            android:drawableLeft="@drawable/dsyt_change"
+            android:layout_toLeftOf="@+id/dsyt_myfabu"
+            android:layout_below="@+id/back_white"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/dsyt_jilv"
+        style="@style/Dsyt_Textstyle"
+        android:text="交易记录"
+        android:layout_marginRight="13dp"
+        android:drawableLeft="@drawable/dsyt_jilu"
+        android:layout_toLeftOf="@+id/dsyt_myfabu"
+        android:layout_below="@+id/dsyt_change"/>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/dsyt_rule"
+        style="@style/Dsyt_Textstyle"
+        android:text="交易规则"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/dsyt_rule"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dsyt_myfabu"/>
+
+
+<TextView
+    android:id="@+id/dsyt_yue_txt"
+    android:textStyle="bold"
+    android:textSize="14sp"
+    android:layout_marginLeft="27dp"
+    android:layout_below="@+id/dsyt_rule"
+    android:textColor="#ffffff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="达事余额"/>
+
+    <TextView
+        android:id="@+id/dsyt_yue"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dsyt_yue_txt"
+        android:text=""
+        android:textColor="#6cdfe6"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="27dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/dsyt_yue"
+        />
+
+
+
+    <TextView
+
+        android:id="@+id/dsyt_money"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@+id/dsyt_yue"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的钱包"/>
+
+
+
+    <TextView
+        android:id="@+id/dsyt_mymoney"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dsyt_money"
+        android:text="￥"
+        android:textColor="#fee040"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="27dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/dsyt_qianbao"
+        />
+
+
+
+<ImageView
+    android:layout_marginBottom="10dp"
+     android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:src="@drawable/dsyt_dibu"
+    android:layout_alignParentBottom="true"/>
+
+
+  <TextView
+      android:id="@+id/dsyt_zengzhi"
+      android:drawablePadding="5dp"
+      android:drawableLeft="@drawable/dsyt_huzhao"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="38dp"
+      android:layout_marginBottom="28dp"
+      android:textColor="@color/white"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="增值护照"/>
+
+
+    <TextView
+        android:id="@+id/dsyt_change_center"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/dsyt_zhihuan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="置换中心"/>
+
+
+    <TextView
+        android:id="@+id/dsyt_findyue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/dsyt_money"
+        android:background="@drawable/dsyt_findyue"
+        android:layout_height="wrap_content"
+        android:text="发现余额"/>
+
+
+
+
+
+
+
+
+<!--    <ImageView
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dsyt_findyue"/>-->
+
+
+
+    <ImageView
+        android:id="@+id/ivLD_matchTip"
+        android:layout_marginTop="203dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/diqiu"/>
+
+</RelativeLayout>

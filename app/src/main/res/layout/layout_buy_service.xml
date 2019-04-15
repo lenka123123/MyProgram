@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="75dp"
+                android:text="营养师姓名"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="营养师类型"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_below="@+id/r"
+        android:showDividers="middle|end"
+        android:background="@color/colorWhite"
+        style="@style/LinearLayout_Divider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/drawable_padding_15"
+            >
+
+            <TextView
+                style="@style/TextView_Style_Content"
+                android:layout_centerVertical="true"
+                android:text="服务时长" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:minWidth="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_widget_add_miu"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/action_reduce"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_widget_miu" />
+
+                <TextView
+                    android:id="@+id/service_time"
+                    android:textSize="@dimen/text_size_style_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="30天"
+                    android:background="@drawable/ic_widget_midden"
+                    android:gravity="center"
+                    android:textColor="@color/__picker_black_40"/>
+
+                <ImageView
+                    android:id="@+id/action_add"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_widget_add" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/drawable_padding_15"
+            android:background="@color/colorWhite">
+
+            <TextView
+                style="@style/TextView_Style_Content"
+                android:text="服务价格" />
+
+            <TextView
+                android:id="@+id/service_fee"
+                style="@style/TextView_Style_Content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/drawable_padding_15"
+            android:background="@color/colorWhite">
+
+            <TextView
+                style="@style/TextView_Style_Content"
+                android:text="已选服务时长:" />
+
+            <TextView
+                android:id="@+id/select_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_size_style_one" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/submit_height"
+            android:background="@drawable/drawable_button_bg_normal"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/l"
+            android:textSize="@dimen/text_size_style_one"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="提交订单" />
+    </LinearLayout>
+
+
+</RelativeLayout>

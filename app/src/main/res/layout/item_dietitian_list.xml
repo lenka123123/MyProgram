@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelativeLayout_Default">
+
+    <com.itheima.roundedimageview.RoundedImageView
+        android:id="@+id/head_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        app:riv_border_color="@android:color/transparent"
+        app:riv_border_width="@dimen/image_view_border_width"
+        app:riv_oval="true" />
+
+    <TextView
+        android:textColor="#333333"
+        android:id="@+id/truename"
+        style="@style/TextView_RelativeLayout_Title"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/head_logo"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/jobtype"
+        style="@style/TextView_RelativeLayout_Item_Content"
+        android:layout_marginLeft="8dp"
+        android:textColor="#666666"
+        android:layout_toRightOf="@+id/truename"
+        android:text="" />
+    <TextView
+        android:id="@+id/item_content"
+        style="@style/TextView_RelativeLayout_Item_Content"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/truename"
+        android:layout_toRightOf="@+id/head_logo"
+        android:layout_marginLeft="23dp"
+        android:lines="2"
+        android:textSize="12sp"
+        android:paddingRight="100dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#aaabbb"
+        android:text=""
+      />
+
+   <TextView
+       android:id="@+id/service_free"
+       android:layout_toRightOf="@+id/head_logo"
+       android:layout_marginLeft="20dp"
+       android:layout_below="@+id/item_content"
+       android:textColor="#f83139"
+       android:layout_marginTop="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text=""/>
+<ImageView
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_zixunchat"/>
+</RelativeLayout>

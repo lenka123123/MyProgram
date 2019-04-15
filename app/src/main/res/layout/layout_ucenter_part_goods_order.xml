@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ucenter_part_goods_order"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="@dimen/margin_10"
+
+    style="@style/LinearLayout_Divider">
+
+    <RelativeLayout style="@style/RelativeLayout_Default">
+        <TextView
+            style="@style/TextView_Style_Title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="商品订单" />
+        <TextView
+            android:id="@+id/action_check_more_goods_order"
+            style="@style/TextView_Style_More"
+            android:text="查看所有订单" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/drawable_padding_15"
+        android:paddingTop="@dimen/drawable_padding_15">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/goods_order_wait_pay"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_dfk"
+                android:text="@string/tysl_state_wait_pay" />
+        </RelativeLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDriver" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_goods_order_wait_shipments"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_dfh"
+                android:text="@string/tysl_state_wait_shipments" />
+        </RelativeLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDriver" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_goods_order_take_delivery_of_goods"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_dsh"
+                android:text="@string/tysl_state_wait_for_receiving" />
+        </RelativeLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDriver" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/action_goods_order_wait_evaluate"
+                style="@style/TextView_UCenter_Order"
+                android:drawableTop="@drawable/ic_ucenter_dpj"
+                android:text="@string/tysl_state_wait_evaluate" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

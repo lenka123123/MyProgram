@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Divider"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--修改的状态-->
+    <include layout="@layout/layout_ucenter_part_bind_progress1" />
+
+     <View
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+         style="@style/LinearLayout_Divider"
+       ></View>
+    <LinearLayout
+
+        android:background="@color/colorWhite"
+        android:paddingLeft="@dimen/drawable_padding_15"
+        android:paddingRight="@dimen/drawable_padding_15"
+        style="@style/LinearLayout_Divider">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+        <TextView
+            android:gravity="right"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="已绑定手机号"/>
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_normal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:textColor="#333"
+            android:gravity="center_vertical"
+
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:gravity="right"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="*验证码"
+                />
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_normal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_yzm"
+            style="@style/EditText_Default" />
+
+        <Button
+            android:id="@+id/action_send_verify_code"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/et_yzm"
+            android:layout_alignBottom="@+id/et_yzm"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/drawable_button_verify_code"
+            android:text="@string/tysl_get_code"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_style_two" />
+    </RelativeLayout>
+        </LinearLayout>
+    <Button
+        android:id="@+id/action_submit"
+        style="@style/TextView_Style_Submit_Login"
+        android:text="下一步" />
+    </LinearLayout>
+
+<LinearLayout
+    android:visibility="invisible"
+    android:layout_marginTop="140dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<TextView
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/tysl_get_codemessage"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tysl_get_codemessagetwo"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textColor="@color/colorAccent"
+            android:text="@string/tysl_get_codemessagethree"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

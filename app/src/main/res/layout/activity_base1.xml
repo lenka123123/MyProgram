@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayout_Divider">
+
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multipleStatusView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loadingView="@layout/layout_loading_view"
+        app:emptyView="@layout/layout_no_data_view"
+        app:errorView="@layout/layout_not_network"
+        app:noNetworkView="@layout/layout_not_network">
+    </com.classic.common.MultipleStatusView>
+</LinearLayout>

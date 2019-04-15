@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_simple_tool_bar"/>
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        style="@style/LinearLayout_Divider"
+        android:showDividers="beginning|middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/drawable_padding_15">
+
+            <ImageView
+                android:id="@+id/store_picture"
+                android:scaleType="fitStart"
+                style="@style/ImageView_Style_Default" />
+
+            <TextView
+                android:id="@+id/store_name"
+                style="@style/TextView_Style_Title"
+                android:layout_alignTop="@+id/store_picture"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_toRightOf="@+id/store_picture" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/TextView_Style_Content"
+                android:layout_alignBottom="@+id/store_picture"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_toRightOf="@+id/store_picture" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_map"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:id="@+id/store_address"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="@dimen/drawable_padding_15"
+                style="@style/TextView_Style_Title" />
+
+            <ImageView style="@style/ImageView_Go_Default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_tel"
+            style="@style/RelativeLayout_Default">
+
+            <TextView
+                android:id="@+id/store_tel"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/drawable_padding_15"
+                style="@style/TextView_Style_Title" />
+
+            <ImageView style="@style/ImageView_Go_Default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        style="@style/LinearLayout_Divider"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_margin="@dimen/margin_default"
+            style="@style/TextView_Style_Title"
+            android:text="门店活动" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/RecyclerView" />
+    </LinearLayout>
+</LinearLayout>

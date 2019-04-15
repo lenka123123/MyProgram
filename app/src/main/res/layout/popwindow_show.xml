@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/pop_all"
+        style="@style/RelativeLayout_Default"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+      <ImageView
+          android:layout_marginLeft="10dp"
+          android:layout_gravity="center"
+          android:src="@drawable/last_money_all"
+         android:layout_width="22dp"
+       android:layout_height="wrap_content" />
+      <TextView
+          android:layout_marginLeft="20dp"
+          android:textColor="@color/black"
+          android:layout_weight="1"
+          android:textSize="11sp"
+          android:layout_gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="全部"/>
+        <ImageView
+            android:id="@+id/pop_select1"
+            android:src="@drawable/last_money_select"
+            android:layout_gravity="center"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_buy"
+        style="@style/RelativeLayout_Default"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/last_money_get"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支出"/>
+        <ImageView
+            android:id="@+id/pop_select2"
+            android:visibility="invisible"
+            android:src="@drawable/last_money_select"
+            android:layout_gravity="center"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_get"
+        style="@style/RelativeLayout_Default"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/last_money_buy"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="收入"/>
+        <ImageView
+            android:id="@+id/pop_select3"
+            android:visibility="invisible"
+            android:src="@drawable/last_money_select"
+            android:layout_gravity="center"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+          />
+    </LinearLayout>
+
+</LinearLayout>

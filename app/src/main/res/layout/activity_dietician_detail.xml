@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="购买服务"
+        android:id="@+id/action_buy_service"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_margin="0dp"
+        style="@style/TextView_Style_Submit" />
+
+    <ScrollView style="@style/ScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_dietitian_top_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <ImageView
+                        android:id="@+id/action_back"
+                        android:src="@drawable/ic_back_white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_default"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/share_yinyangshi"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_back_share1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:background="@android:color/transparent">
+
+                    <com.itheima.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/dietician_head_img"
+                        android:layout_width="@dimen/image_size_style_header"
+                        android:layout_height="@dimen/image_size_style_header"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_default_head_image"
+                        app:riv_border_color="@android:color/transparent"
+                        app:riv_border_width="1dp"
+                        app:riv_oval="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/action_polygon_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.shantoo.widget.imageview.SelectorImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/siv_polygon_collect"
+                            android:src="@drawable/ic_guanzhus"
+                            app:rx_selected_src="@drawable/ic_favorited"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dietician_name"
+                        style="@style/TextView_Style_Title"
+                        android:layout_alignTop="@+id/dietician_head_img"
+                        android:layout_marginLeft="@dimen/margin_default"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:layout_toRightOf="@+id/dietician_head_img"
+                        android:layout_toEndOf="@+id/dietician_head_img"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/dietician_type"
+                        style="@style/TextView_Style_Content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_default"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:layout_toRightOf="@+id/dietician_head_img"
+                        android:layout_toEndOf="@+id/dietician_head_img"
+                        android:textColor="@color/colorWhite" />
+
+                    <ImageView
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/service_num"
+                         android:src="@drawable/yinyangshi_place"
+                        android:layout_alignBottom="@+id/dietician_head_img"
+                        android:layout_marginLeft="@dimen/margin_default"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:layout_toRightOf="@+id/dietician_head_img"
+                        android:layout_toEndOf="@+id/dietician_head_img"
+                        />
+
+                    <TextView
+                        android:text="222"
+                        android:id="@+id/favorable_rate"
+                        style="@style/TextView_Style_Content"
+                        android:layout_alignBottom="@+id/dietician_head_img"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:layout_toRightOf="@+id/service_num"
+                        android:layout_toEndOf="@+id/service_num"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_field"
+                    style="@style/RecyclerView"
+                    android:padding="@dimen/drawable_padding_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:divider="@drawable/separator"
+                android:orientation="vertical"
+                android:showDividers="middle">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:orientation="horizontal">
+          <LinearLayout
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <TextView
+                  android:id="@+id/service_price2"
+                  android:textColor="#333"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="￥100/天"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="服务价格"/>
+             </LinearLayout>
+
+           <View
+               android:layout_gravity="center"
+               android:background="#999"
+               android:layout_width="0.5dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="15dp"
+               android:layout_height="wrap_content"></View>
+
+           <LinearLayout
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:id="@+id/service_num2"
+                   android:textColor="#333"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="600/次"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="服务次数"/>
+           </LinearLayout>
+
+           <View
+               android:layout_gravity="center"
+               android:background="#999"
+               android:layout_width="0.5dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="15dp"
+               android:layout_height="wrap_content"></View>
+           <LinearLayout
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               xmlns:app="http://schemas.android.com/apk/res-auto">
+               <TextView
+                   android:id="@+id/pinfen"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5.0分"/>
+          <!--     <com.hedgehog.ratingbar.RatingBar
+                   android:id="@+id/xinxin"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   app:clickable="false"
+                   app:halfstart="false"
+
+                   app:starEmpty="@drawable/ic_ratingbar_star_fill"
+                   app:starFill="@drawable/ic_ratingbar_star_empty"
+                   app:starImageHeight="21dp"
+                   app:starImagePadding="5dp"
+                   app:starImageWidth="21dp" />-->
+          <com.wokun.tysl.duotupianshangchuan.MyRatingBar
+                    android:id="@+id/xinxin"
+                   android:layout_marginBottom="2dp"
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:clickable="false"
+                   app:halfstart="false"
+                   app:starCount="0"
+                   app:starNum="0"
+                   app:starEmpty="@drawable/ic_ratingbar_star_empty"
+                   app:starFill="@drawable/ic_ratingbar_star_fill"
+                   app:starImageHeight="21dp"
+                   app:starImagePadding="2dp"
+                   app:starImageWidth="20dp" />
+           </LinearLayout>
+       </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal">
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:src="@drawable/ic_weixing3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#666"
+           android:id="@+id/dietician_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购买服务后可见"/>
+</LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_shouji3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/dietician_mobile"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13sp"
+                        android:textColor="#666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买服务后可见"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/action_dietician_individual_resume"
+                    style="@style/RelativeLayout_Default">
+                        <!--  android:drawableLeft="@drawable/ic_dietician_detail_resume"
+                        android:drawableStart="@drawable/ic_dietician_detail_resume"-->
+                    <TextView
+                        android:textColor="#333"
+                        android:id="@+id/yinyangshi_jianjie"
+                        style="@style/TextView_Style_Content"
+                         android:drawablePadding="@dimen/drawable_padding_15"
+                        android:text="@string/tysl_individual_resume" />
+                    <View
+                        android:id="@+id/yinyangshi_jianjie_view"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/yinyangshi_jianjie"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eee"></View>
+
+                    <TextView
+                        android:id="@+id/yinyangshi_text"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/yinyangshi_jianjie_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_Divider"
+                android:layout_marginTop="@dimen/margin_10">
+            <!--    <RelativeLayout
+                    android:id="@+id/action_mobile"
+                    style="@style/RelativeLayout_Default">
+
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:drawableLeft="@drawable/ic_dietician_detail_mobile"
+                        android:drawableStart="@drawable/ic_dietician_detail_mobile"
+                        android:drawablePadding="@dimen/drawable_padding_15"
+                        android:text="@string/tysl_mobile" />
+
+                    <TextView
+                        android:id="@+id/dietician_mobile"
+                        style="@style/TextView_Style_Three"
+                        android:text="购买服务后可见"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimary"/>
+                </RelativeLayout>-->
+
+              <!--  <RelativeLayout
+                    android:id="@+id/action_weixing"
+                    style="@style/RelativeLayout_Default">
+                    <TextView
+                        style="@style/TextView_Style_Content"
+                        android:drawableLeft="@drawable/ic_dietician_detail_wx"
+                        android:drawableStart="@drawable/ic_dietician_detail_wx"
+                        android:drawablePadding="@dimen/drawable_padding_15"
+                        android:text="@string/tysl_weixing" />
+
+                    <TextView
+                        android:id="@+id/dietician_wechat"
+                        android:text="购买服务后可见"
+                        style="@style/TextView_Style_Three"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_nutrition_station"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="@dimen/margin_10">
+                <TextView
+                    style="@style/TextView_Style_Title"
+                    android:text="@string/tysl_nutrition_station" />
+
+                <TextView
+                    android:id="@+id/nutrition_station_num"
+                    style="@style/TextView_Style_More"
+                    android:text="共0款" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBackground" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_nutrition_station"
+                style="@style/RecyclerView"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/action_release_article"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/TextView_Style_Title"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tysl_release_article" />
+
+                <TextView
+                    android:id="@+id/article_nums"
+                    style="@style/TextView_Style_More"
+                    android:text="共0款" />
+
+
+            </RelativeLayout>
+         <include  layout="@layout/item_aritcls_show"></include>
+            <RelativeLayout
+                android:id="@+id/action_evaluate_number"
+                style="@style/RelativeLayout_Default"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/service_evaluate"
+                    style="@style/TextView_Style_Title"
+                    android:layout_centerVertical="true"
+                    android:text="服务评价(0)" />
+
+                <TextView style="@style/TextView_Style_More" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBackground" />
+
+            <TextView
+                android:id="@+id/empty_evaluate"
+                style="@style/TextView_Style_Content"
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/drawable_padding_15"
+                android:text="暂无评价！"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_evaluate_number"
+                style="@style/RecyclerView" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

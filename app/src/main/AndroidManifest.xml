@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wokun.tysl">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- android:name=".TyslApp"-->
+    <application
+        android:name=".TyslApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name,theme">
+
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <activity android:name=".main.IntroActivity" />
+        <activity android:name=".main.TestActivity">
+
+        </activity>
+        <activity android:name=".main.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".address.ui.AddressAddActivity" />
+        <activity android:name=".address.ui.AddressListActivity" />
+        <activity android:name=".address.ui.AddressEditActivity" />
+        <activity android:name=".asset.ui.activity.AssertDsytfindmoney"></activity>
+        <activity android:name=".article.ui.ArticleDetailActivity" />
+        <activity android:name=".article.ui.ArticleListActivity" />
+        <activity android:name=".article.ui.DieticianArticleListActivity" />
+        <activity android:name=".article.ui.XueTangArticleListActivity" />
+        <activity android:name=".article.ui.ArticleFavoritesActivity" />
+        <activity android:name=".ucenter.ui.MyHealthActivity2">
+
+        </activity>
+        <activity android:name=".goods.ui.activity.GoodsOrderConfirmationActivity2"></activity>
+        <activity android:name=".goodslinshou.ui.GoodsOrderDetailActivity2"></activity>
+        <activity android:name=".dietician.ui.activity.DieticianDetailActivity" />
+        <activity android:name=".dietician.ui.activity.DieticianDndividualResumeActivity" />
+        <activity android:name=".dietician.ui.activity.DieticianIndexActivity" />
+        <activity android:name=".dietician.ui.activity.DietitianBuyServiceActivity" />
+        <activity android:name=".dietician.ui.fragment.DietitianCheckEvaluate" />
+        <activity android:name=".dietician.ui.activity.DietitianFieldTypeActivity" />
+        <activity android:name=".dietician.ui.activity.DietitianFieldTypeSelectActivity" />
+        <activity android:name=".dietician.ui.activity.DietitianJobTypeActivity" />
+        <activity android:name=".dietician.ui.activity.DietitianListActivity" />
+        <activity android:name=".dietician.ui.activity.DietitianRecommendGoodsActivity" />
+        <activity android:name=".dietician.ui.activity.DietitianServiceOrderActivity" />
+        <activity android:name=".dietician.ui.activity.DieticianFavoritesActivity" />
+        <activity android:name=".ucenter.ui.NewEditMobileActivity"></activity>
+        <activity android:name=".article.ui.PinjiaServiceListActivity2"></activity>
+        <activity android:name=".smartretail.ui.activity.ZhihuiGoodsDetailActivity"></activity>
+        <activity android:name=".ucenter.ui.NewEditMobileActivity2"></activity>
+        <activity android:name=".ucenter.ui.NewEditMobileActivity3"></activity>
+        <activity android:name=".goods.ui.activity.GoodsCategoryActivity" />
+        <activity android:name=".goods.ui.activity.GoodsDetailActivity" />
+        <activity android:name=".goods.ui.activity.GoodsEvaluateActivity" />
+        <activity android:name=".goods.ui.activity.GoodsFavoritesActivity" />
+        <activity android:name=".goods.ui.activity.GoodsListActivity" />
+        <activity android:name=".goods.ui.activity.GoodsOrderActivity" />
+        <activity android:name=".goods.ui.activity.GoodsOrderConfirmationActivity" />
+        <activity android:name=".goods.ui.activity.GoodsOrderDetailActivity" />
+        <activity android:name=".goods.ui.activity.GoodsOrderConfirmationActivity3"></activity>
+        <activity android:name=".goods.ui.activity.GoodsOrderConfirmationActivity4"></activity>
+        <activity android:name=".login.ui.LoginActivity" />
+        <activity android:name=".login.ui.RegisterActivity" />
+        <activity android:name=".login.ui.AlterPwdActivity" />
+        <activity android:name=".huiyuantotal.ui.ChuangkeDindanAcitivity"></activity>
+        <activity android:name=".huiyuantotal.ui.ChuangkeToyalActivity"></activity>
+        <activity android:name=".servicein.ui.ServiceInActivity" />
+        <activity android:name=".servicein.ui.ServiceEvaluateActivity" />
+        <activity android:name=".servicein.ui.ServiceAuthenticationActivity" />
+        <activity android:name=".servicein.ui.ServiceAuthenticationResultActivity" />
+        <activity android:name=".store.ui.StoreIndexActivity" />
+        <activity android:name=".store.ui.MerchantEnterActivity" />
+        <activity android:name=".store.ui.StoreFavoritesActivity" />
+        <activity android:name=".store.ui.MerchantApplyForActivity" />
+
+        <activity android:name=".other.ui.OnlinePaymentActivity" />
+        <activity android:name=".other.ui.MessageControlActivity" />
+        <activity android:name=".goodslinshou.ui.GoodslinshouOrderActivity"></activity>
+        <activity android:name=".ucenter.ui.PayActivity" />
+        <activity android:name=".ucenter.ui.AboutUsActivity" />
+        <activity android:name=".ucenter.ui.EditPwdActivity" />
+        <activity android:name=".ucenter.ui.SettingsActivity" />
+        <activity android:name=".ucenter.ui.MyHealthActivity" />
+        <activity android:name=".ucenter.ui.FeedBackActivity" />
+        <activity android:name=".ucenter.ui.MyApplyForActivity" />
+        <activity android:name=".ucenter.ui.EditMobileActivity" />
+        <activity android:name=".ucenter.ui.MoneyDetailActivity" />
+        <activity android:name=".ucenter.ui.EditAddressActivity" />
+        <activity android:name=".ucenter.ui.EditUserInfoActivity" />
+        <activity android:name=".ucenter.ui.EditIndividualResumeActivity" />
+        <activity android:name=".article.ui.PinjiaGoodsListActivity" />
+        <activity android:name=".earnings.ui.MyEarningsActivity" />
+        <activity android:name=".earnings.ui.AccountListActivity" />
+        <activity android:name=".earnings.ui.AddDepositCardActivity" />
+        <activity android:name=".earnings.ui.WithdrawDepositActivity" />
+        <activity android:name=".earnings.ui.EarningsExplainActivity" />
+        <activity android:name=".earnings.ui.AccountSettingsActivity" />
+        <activity android:name=".earnings.ui.AddAlipayAccountActivity" />
+        <activity android:name=".earnings.ui.EarningsDetailedActivity" />
+        <activity android:name=".earnings.ui.SelectAccountTypeActivity" />
+        <activity android:name=".earnings.ui.WithdrawDepositDetailActivity" />
+        <activity android:name=".mypersonmoney.ui.MyyueActivity"></activity>
+        <activity android:name=".asset.ui.activity.AssetIndexActivity" />
+        <activity android:name=".asset.ui.activity.AssetRulesActivity" />
+        <activity android:name=".asset.ui.activity.AssetMyDealActivity" />
+        <activity android:name=".asset.ui.activity.AssetReleaseActivity" />
+        <activity android:name=".asset.ui.activity.AssetTransactionActivity" />
+        <activity android:name=".asset.ui.activity.AssetMyReleaseRecordActivity" />
+        <activity android:name=".asset.ui.activity.AssertDsytActivity"></activity>
+        <activity android:name=".smartretail.ui.activity.SmartRetailUCenterActivity" />
+        <activity android:name=".smartretail.ui.activity.SmartRetailOrderListActivity" />
+        <activity android:name=".smartretail.ui.activity.SmartRetailStorageRackActivity" />
+        <activity android:name=".smartretail.ui.activity.MerchantAccountManagementActivity" />
+        <activity android:name=".smartretail.ui.activity.SmartRetailMerchantsBindingActivity" />
+        <activity android:name=".smartretail.ui.activity.SmartRetailMerchantEarningsActivity" />
+        <activity android:name=".article.ui.PinjiaServiceListActivity"></activity>
+        <activity android:name=".home.ui.HomeWebActivity"></activity>
+        <activity android:name=".home.ui.HomeZhihuiWebActivity"></activity>
+        <activity android:name=".home.ui.HomeADWebActivity"></activity>
+        <activity android:name=".mypersonmoney.ui.CashDetalisActivity"></activity>
+        <activity android:name=".asset.ui.activity.AssertDsytAddmoney"></activity>
+        <activity android:name=".ucenter.ui.PersonalInfoActivity"></activity>
+        <activity android:name=".ucenter.ui.ShouCangActivity"></activity>
+        <activity
+            android:name=".ucenter.ui.MymoneyToyalActivity"
+            android:theme="@style/AppThemeRed"></activity>
+        <activity android:name=".zichanchange.ui.MyzichanChange"></activity>
+        <activity android:name=".myfabu.ui.MyfabuAcivity"></activity>
+        <activity android:name=".base.SimpleWebViewActivity" />
+        <activity android:name=".shoucang.ui.MyshoucangActivity"></activity>
+        <activity android:name=".asset.ui.activity.DsytYaoqingActivity" />
+        <activity android:name=".serviceinto.ui.ServiceAuthenticationaginActivity"></activity>
+        <activity android:name=".serviceinto.ui.ServiceZhihiuiActivity"></activity>
+        <activity android:name=".serviceinto.ui.ServiceShangjiaActivity"></activity>
+        <activity android:name=".serviceinto.ui.ServiceYinyangshiActivity"></activity>
+        <activity android:name=".myyijian.ui.MyyijianActivity"></activity>
+        <activity android:name=".mypersonmoney.ui.MylastmoneyActivity"></activity>
+        <activity android:name=".goods.ui.activity.GoodsCategoryNewActivity"></activity>
+        <activity android:name=".asset.ui.activity.AssertChangeActivity"></activity>
+        <activity android:name=".asset.ui.activity.AssertSureChangeActivity"></activity>
+        <activity android:name=".smartretail.ui.activity.SmartRetailIndexActivity"></activity>
+        <activity android:name=".smartretail.ui.activity.SaoyisaoActivity"></activity>
+        <activity android:name=".huiyuantotal.ui.HuiyuanTotalActivity"></activity>
+        <activity android:name=".smartretail.ui.activity.MechantAccountMangermentNewActivity"></activity>
+        <activity android:name=".order.ui.MyOrderActivity"></activity>
+        <activity android:name=".kucuntotal.ui.KucunTotalActivity"></activity>
+        <activity android:name=".huiyuantotal.ui.TixianTotalActivity"></activity>
+        <activity android:name=".huiyuantotal.ui.ErWeiMaTotalActivity"></activity>
+        <activity android:name=".huiyuantotal.ui.HistoryKehuActivity"></activity>
+        <activity android:name=".bankaccount.ui.BankTestActivity"></activity>
+        <activity android:name=".bankaccount.ui.BankTestActivity2"></activity>
+        <activity android:name=".huiyuantotal.ui.TixianMoneyActivity"></activity>
+        <activity android:name=".huiyuantotal.ui.TixianMoneyActivity2"></activity>
+        <activity android:name=".stock.ui.InventoryActivity"></activity>
+        <activity android:name=".stock.ui.ReceiptActivity"></activity>
+        <activity android:name=".mypinjia.ui.MysendmessageActivity"></activity>
+        <activity android:name=".mypinjia.ui.MymessagedetailsActivity"></activity>
+        <activity android:name=".goods.ui.activity.ZhihuiSuccessfulActivity"></activity>
+        <activity android:name=".goods.ui.activity.CheckWuliuActivity"></activity>
+        <!-- 拍照 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--<activity android:name="com.shantoo.android.widget.multiplephotoselector.ui.AlbumActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.shantoo.android.widget.multiplephotoselector.ui.AlbumChanceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.shantoo.android.widget.multiplephotoselector.ui.PhotoDelete"
+            android:screenOrientation="portrait"/>-->
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c7c45d428a4e7ef9714c44003bdc55b8" />
+
+        <!--融云即时聊天配置-->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="bmdehs6pb10cs" />
+
+        <activity
+            android:name=".rongcold.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.wokun.tysl"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".goods.ui.activity.CheckWuliuActivity"
+            tools:ignore="DuplicateActivity" />
+
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="App ID" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="App Secret" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="RSA密钥" />
+
+        <meta-data
+            android:name="channeltest"
+            android:value="1"></meta-data>
+
+
+    </application>
+</manifest>

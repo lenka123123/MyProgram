@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/yinyangshi_wenzhang"
+
+    >
+<RelativeLayout
+
+    android:background="@drawable/item_bg_normal"
+    android:layout_marginTop="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:textSize="14sp"
+    android:id="@+id/item_artcils_text"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:lines="3"
+    android:lineSpacingExtra="4dp"
+    android:text="的哈哈大陆接受的啦就是点击领取活动领取话费卡换卡"/>
+    
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:id="@+id/item_artcils_img"
+       android:layout_toRightOf="@+id/item_artcils_text"
+        android:layout_width="115dp"
+        android:layout_height="70dp" />
+
+<TextView
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/item_artcils_time"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@+id/item_artcils_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2018-5-28"/>
+
+ <TextView
+    android:layout_marginBottom="5dp"
+    android:id="@+id/item_artcils_num"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/item_artcils_text"
+    android:layout_toRightOf="@+id/item_artcils_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3.4w人浏览"
+    />
+
+</RelativeLayout>
+</LinearLayout>

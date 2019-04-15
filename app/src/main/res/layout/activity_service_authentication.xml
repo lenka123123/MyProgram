@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/separator"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="@dimen/activity_padding_left"
+                android:text="@string/tysl_authentication_hint_message"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/action_select_true_head_portrait"
+                style="@style/RelativeLayout_Default">
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tysl_true_head_portrait" />
+
+                <com.itheima.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_image_header"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/image_size_style_comment"
+                    android:layout_height="@dimen/image_size_style_comment"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_default_head_image"
+                    app:riv_border_color="@android:color/transparent"
+                    app:riv_border_width="@dimen/drawable_padding_1"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_true_name"
+                style="@style/RelativeLayout_Default">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/TextView_Style_Content"
+                    android:text="@string/tysl_true_name" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_toEndOf="@+id/tv2"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:gravity="end"
+                    style="@style/EditText_Earnings"
+                    android:hint="请输入姓名" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_select_sex"
+                style="@style/RelativeLayout_Default">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/TextView_Style_Content"
+                    android:text="@string/tysl_sex" />
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/TextView_Style_Content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorAC"
+                    android:text="请选择性别" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_select_birthday"
+                style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:text="@string/tysl_birthday" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/TextView_Style_Content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorAC"
+                    android:text="请选择出生年月" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/RelativeLayout_Default">
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/TextView_Style_Content"
+                    android:text="@string/tysl_id_card" />
+
+                <EditText
+                    android:id="@+id/et_id_card_hint"
+                    android:gravity="end"
+                    android:layout_toEndOf="@+id/tv1"
+                    android:layout_toRightOf="@+id/tv1"
+                    style="@style/EditText_Earnings"
+                    android:hint="@string/tysl_id_card_hint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_select_area"
+                style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:text="所在区域" />
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/TextView_Style_Content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAC"
+                    android:text="请选择所在区域" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:text="从业时间" />
+
+                <EditText
+                    android:id="@+id/et_work_life"
+                    style="@style/EditText_Earnings"
+                    android:textColor="@color/colorAC"
+                    android:hint="请输入从业时间"
+                    android:gravity="end" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_select_the_field_of_expertise"
+                style="@style/RelativeLayout_Default">
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:text="@string/tysl_user_the_field_of_expertise" />
+                <TextView
+
+                    android:id="@+id/tv_the_field_of_expertise"
+                    style="@style/TextView_Style_More" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:padding="@dimen/activity_padding_left"
+                    android:text="@string/tysl_id_card_photo" />
+
+                <include layout="@layout/layout_id_card_authentication" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:padding="@dimen/activity_padding_left"
+                    android:text="@string/tysl_authentication_prove" />
+
+                  <com.wokun.tysl.duotupianshangchuan.MyMultiplePhotoSelector
+                    android:id="@+id/multiple_photo_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/rectangle_radius_grid_bg"
+                    android:listSelector="@drawable/selector_pressed_gray"
+                    android:horizontalSpacing="5dip"
+                    android:numColumns="4"
+                    android:padding="10dip"
+                    android:verticalSpacing="5dip" />
+
+                <TextView
+                    style="@style/TextView_Style_Content"
+                    android:gravity="start"
+                    android:padding="@dimen/activity_padding_left"
+                    android:text="@string/tysl_authentication_prove_message"
+                    android:textColor="@color/colorTextHint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tysl_authentication_message1" />
+
+                <TextView
+                    android:id="@+id/action_join_xie_yi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tysl_authentication_message2"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/action_submit"
+                style="@style/Button_Default"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/activity_padding_left"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="@string/tysl_authentication_submit" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
